@@ -1,0 +1,30 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: 太记功能手册
+title: 太记功能手册/云端备份/OAuth登录
+type: text/vnd.tiddlywiki
+
+太记支持通过 OAuth 方式登录，无需手动填写 Personal Access Token。
+
+!! GitHub OAuth 登录
+
+# 打开太记设置 → 「同步和备份」→ 「Git 身份凭证」
+# 点击「GitHub」标签页
+# 点击「使用 GitHub 登录」按钮
+# 浏览器会跳转到 GitHub 授权页面，授权后自动返回，Token 自动填入
+
+!! 自定义 OAuth 服务器登录（PKCE 流程）
+
+适用于自建 GitLab、Gitea 或其他支持 OAuth 2.0 + PKCE 的服务：
+
+# 切换到「自定义服务器」标签页
+# 填写「服务器地址」（如 `https://gitlab.example.com`）和「Client ID」
+# 点击登录按钮，浏览器打开授权页面
+# 授权完成后，Token 自动填入表单，并显示「退出登录」按钮
+
+!! 注意
+
+* PKCE 流程无需填写 Client Secret，安全性更高
+* 若需手动填写 Token，可忽略此页，直接在表单中粘贴

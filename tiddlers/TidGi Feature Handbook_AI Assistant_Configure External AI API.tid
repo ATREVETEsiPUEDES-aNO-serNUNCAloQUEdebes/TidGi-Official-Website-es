@@ -1,0 +1,30 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/AI Assistant/Configure External AI API
+type: text/vnd.tiddlywiki
+
+Open TidGi settings (click the gear icon at the bottom of the sidebar), find "External API Settings", and configure the following model endpoints:
+
+!! Language Model (Conversations / Agents)
+
+Fill in an OpenAI-compatible Base URL and API Key. For example:
+
+* Official OpenAI: `https://api.openai.com/v1`
+* Local Ollama: `http://localhost:11434/v1`
+* Any compatible endpoint (DeepSeek, Azure OpenAI, etc.) works
+
+!! Embedding Model (Vector Semantic Search)
+
+Used to generate vector indexes for tiddlers. Can use a different endpoint or model name from the language model. Must be configured separately.
+
+!! Speech Model (Voice-to-Text)
+
+Used to transcribe audio recordings before sending to an agent. Fill in an OpenAI Whisper-compatible endpoint and model name.
+
+!! Tips
+
+* Once configured, go to [[TidGi Feature Handbook/AI Assistant/Using Agents]] to start a conversation.
+* Leave a section blank if you don't need that model type.

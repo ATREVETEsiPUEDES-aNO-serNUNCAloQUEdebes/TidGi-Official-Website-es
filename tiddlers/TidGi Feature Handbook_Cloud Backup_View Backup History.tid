@@ -1,0 +1,33 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Cloud Backup/View Backup History
+type: text/vnd.tiddlywiki
+
+!! Opening the Backup History Window
+
+Click "Workspace → View Backup History" in the top menu to open the Git history log window.
+
+!! Browsing Commits
+
+* The left panel shows all Git commits in reverse chronological order
+* Each entry shows the commit time and message
+* If there are uncommitted changes, an "Uncommitted Changes" row appears at the top automatically
+
+!! Viewing Files Changed in a Commit
+
+Click any commit row; the right panel lists the filenames changed in that commit.
+
+!! Committing Current Changes Now
+
+# Click the "Uncommitted Changes" row
+# Switch to the "Actions" tab on the right
+# Click the "Commit Now" button
+# If [[TidGi Feature Handbook/AI Assistant/AI Auto-Generate Backup Title]] is enabled, the commit message is written by the AI automatically
+
+!! Notes
+
+* This window is read-only; it does not support rollback or checking out historical versions (use `git checkout` from the command line for that)
+* To push commits to a remote repository, use "Workspace → Sync to Cloud Now"

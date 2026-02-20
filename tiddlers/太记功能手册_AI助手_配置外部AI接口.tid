@@ -1,0 +1,30 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: 太记功能手册
+title: 太记功能手册/AI助手/配置外部AI接口
+type: text/vnd.tiddlywiki
+
+打开太记设置（点击左侧栏底部齿轮图标），找到「外部接口设置」，可以配置以下模型接口：
+
+!! 语言模型（对话 / 智能体）
+
+填写兼容 OpenAI API 的服务地址（Base URL）和 API Key。例如：
+
+* 官方 OpenAI：`https://api.openai.com/v1`
+* 本地 Ollama：`http://localhost:11434/v1`
+* 任意兼容接口（DeepSeek、Azure OpenAI 等）均可
+
+!! Embedding 模型（向量语义搜索）
+
+用于生成条目的向量索引，可与语言模型使用不同的接口或模型名称。需要单独配置。
+
+!! 语音模型（语音转文字）
+
+用于将录音转为文字后输入智能体。填写兼容 OpenAI Whisper API 的接口地址和模型名称。
+
+!! 提示
+
+* 配置完成后，切换到[[太记功能手册/AI助手/使用智能体]]开始对话。
+* 若不需要某类模型功能，对应配置项留空即可。

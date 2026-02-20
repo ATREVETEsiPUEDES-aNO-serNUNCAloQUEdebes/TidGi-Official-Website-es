@@ -1,0 +1,32 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Workspace Hibernation
+type: text/vnd.tiddlywiki
+
+Workspace hibernation automatically frees the memory used by idle workspaces and wakes them back up when you switch to them — useful if you have multiple workspaces open at once.
+
+!! How to Enable
+
+# Right-click the workspace icon in the sidebar and choose "Edit Workspace"
+# In the Edit Workspace window, find and expand the "Miscellaneous Options" section
+# Enable the "Hibernate When Unused" switch
+# Click "Save"
+
+!! Behavior
+
+* After switching to another workspace, the hibernated workspace automatically releases its browser process memory
+* The workspace icon shows a "hibernated" state (grayed out)
+* When you switch back, TidGi reloads the workspace automatically — usually takes just a few seconds
+
+!! When to Use
+
+* You have 3 or more workspaces open but only use one or two at a time
+* Your computer has limited RAM and you want to reduce background usage
+
+!! Notes
+
+* While hibernated, the HTTP API and sync features for that workspace are temporarily unavailable
+* Everything returns to normal after the workspace wakes up

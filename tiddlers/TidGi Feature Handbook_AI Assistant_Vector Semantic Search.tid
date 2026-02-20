@@ -1,0 +1,38 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/AI Assistant/Vector Semantic Search
+type: text/vnd.tiddlywiki
+
+Vector semantic search lets you find notes by describing what you mean in natural language, rather than relying on exact keyword matches.
+
+!! Prerequisites
+
+Configure an "Embedding Model" endpoint in [[TidGi Feature Handbook/AI Assistant/Configure External AI API]].
+
+!! Building the Vector Index
+
+In the agent chat, tell the agent:
+
+```
+Update the vector index for the wiki workspace
+```
+
+The agent will invoke the `wiki-update-embeddings` tool to generate embedding vectors for all tiddlers. A summary of indexed items will be shown when complete.
+
+!! Performing a Semantic Search
+
+Once the index is built, describe what you're looking for in a message:
+
+```
+Use vector search in wiki to find content about "how to use AI agents"
+```
+
+The agent calls `wiki-search` (with `searchType: vector`) and returns the most similar tiddlers along with explanations.
+
+!! Notes
+
+* After adding many new tiddlers, run "update vector index" again to keep the index up to date
+* Results are ranked by similarity percentage; items above 70% similarity are generally relevant

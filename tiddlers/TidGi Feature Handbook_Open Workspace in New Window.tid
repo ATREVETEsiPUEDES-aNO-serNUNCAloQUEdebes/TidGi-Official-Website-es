@@ -1,0 +1,30 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Open Workspace in New Window
+type: text/vnd.tiddlywiki
+
+TidGi lets you open the same workspace in a separate new window. Content in both windows is kept in sync in real time via SSE.
+
+!! Opening a New Window
+
+Right-click the workspace icon in the sidebar and choose "Open in New Window". The workspace opens in an independent window.
+
+!! Real-Time Cross-Window Sync
+
+* When you edit a tiddler in any window (after saving), the other window automatically receives the update and refreshes that tiddler
+* Sync is bidirectional: changes in the main window push to the new window, and changes in the new window push back to the main window
+* Uses SSE (Server-Sent Events) for push delivery with minimal latency
+
+!! Use Cases
+
+* Browse reference material in one window while writing notes in another
+* Multi-monitor setup: show different tiddlers from the same workspace on separate screens
+* Use the new window as a "read-only display" while editing in the main window
+
+!! Notes
+
+* Both windows share the same backend process, so the extra memory overhead is minimal
+* Closing the main window does not close the new window (they are independent)

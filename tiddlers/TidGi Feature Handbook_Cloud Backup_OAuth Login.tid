@@ -1,0 +1,30 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Cloud Backup/OAuth Login
+type: text/vnd.tiddlywiki
+
+TidGi supports OAuth login so you don't need to manually generate a Personal Access Token.
+
+!! GitHub OAuth Login
+
+# Open TidGi settings → "Sync & Backup" → "Git Credentials"
+# Click the "GitHub" tab
+# Click "Login with GitHub"
+# Your browser will open GitHub's authorization page; after approving, you are redirected back and the token is filled in automatically
+
+!! Custom OAuth Server Login (PKCE)
+
+For self-hosted GitLab, Gitea, or any OAuth 2.0 + PKCE-compatible service:
+
+# Switch to the "Custom Server" tab
+# Fill in the "Server URL" (e.g. `https://gitlab.example.com`) and "Client ID"
+# Click the login button; your browser opens the authorization page
+# After approval, the token is filled in automatically and a "Logout" button appears
+
+!! Notes
+
+* PKCE requires no Client Secret, making it more secure
+* If you prefer to paste a token manually, simply fill in the credential field directly without using OAuth

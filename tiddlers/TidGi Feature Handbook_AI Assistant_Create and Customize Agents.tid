@@ -1,0 +1,33 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/AI Assistant/Create and Customize Agents
+type: text/vnd.tiddlywiki
+
+!! Creating a New Agent
+
+# In the agent workspace, click the "+" new tab button
+# Click "Create New Agent"
+# Complete the three-step wizard:
+
+!!! Step 1: Set Up Agent
+
+* Select a template from the search box (built-in, plugin, or cloud templates available)
+* Enter a name for the agent, e.g. "Code Assistant"
+
+!!! Step 2: Edit Prompt
+
+* Expand the prompt configuration form and switch to the relevant tab
+* Expand the array item and edit the system prompt text field
+* This becomes the default prompt for the agent
+
+!!! Step 3: Test and Use
+
+* Send a test message in the preview chat to verify the behavior
+* Click "Save and Use Agent" to create and immediately start a new conversation
+
+!! Editing an Existing Agent
+
+Click the agent settings button in the top-right corner of any conversation tab to modify the prompt for that conversation. To make a permanent change, edit the agent definition directly in the agent workspace.
