@@ -1,5 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/tiddly-gittly/TidGi-Desktop/master/src/services/workspaces/tidgi.config.schema.json",
   "version": 1,
-  "name": "TidGi-Official-Website"
+  "name": "TidGi-Official-Website",
+  "id": "if5zbRot_0D81e3XI-F9h"
 }
