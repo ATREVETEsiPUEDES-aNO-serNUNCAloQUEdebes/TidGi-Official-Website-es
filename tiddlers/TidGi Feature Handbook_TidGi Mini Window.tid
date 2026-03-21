@@ -1,0 +1,33 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/TidGi Mini Window
+type: text/vnd.tiddlywiki
+
+The TidGi Mini Window is a floating window you can summon at any time with a global keyboard shortcut, letting you quickly jot down or look up notes without switching apps.
+
+!! Enabling the Mini Window
+
+# Open TidGi settings (gear icon at the bottom of the sidebar)
+# Find the "TidGi Mini Window" section
+# Toggle it on; a TidGi icon appears in the system tray and the mini window is created (hidden by default)
+
+!! Setting a Global Shortcut
+
+# On the "TidGi Mini Window" settings page, click the "Register Shortcut" button
+# Press the key combination you want (e.g. `Ctrl+Shift+M` / `Command+Shift+M`)
+# Click "Confirm" to save
+
+After that, pressing the shortcut from any application shows the mini window; pressing it again hides it.
+
+!! Mini Window Options
+
+* ''Always on Top'': when enabled, the mini window floats above all other windows
+* ''Sync Workspace with Main Window'': when enabled, switching workspaces in the main window also switches the mini window to the same workspace
+
+!! Notes
+
+* The mini window displays the full TiddlyWiki interface — you can read and edit normally
+* Disabling the mini window toggle destroys the floating window

@@ -1,0 +1,28 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/External File Watching
+type: text/vnd.tiddlywiki
+
+When file system watching is enabled, TidGi monitors the workspace's `tiddlers/` folder in real time. Creating, modifying, or deleting `.tid` files with any external editor (VS Code, Obsidian, Vim, etc.) is immediately synced into the wiki — no restart required.
+
+!! How to Enable
+
+# Right-click the workspace icon in the sidebar and choose "Edit Workspace"
+# Find the "File System Watching (enableFileSystemWatch)" option
+# Enable the switch
+# Click "Save"; the workspace will reload to apply the setting
+
+!! Use Cases
+
+* Edit `.tid` files in bulk with VS Code and see the changes instantly in the wiki
+* Run scripts to batch-import or generate tiddlers and watch the results in real time
+* Collaborate with tools like Obsidian; external edits appear immediately
+
+!! Notes
+
+* File system watching is ''off'' by default to avoid the extra resource cost of continuous disk scanning
+* Only `.tid` and `.meta` files inside the `tiddlers/` directory are watched; binary files such as images are not
+* Avoid editing the same tiddler simultaneously in both TidGi and an external editor, as concurrent writes may cause conflicts

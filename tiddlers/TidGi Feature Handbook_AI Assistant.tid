@@ -1,21 +1,13 @@
 created: 20230718160552704
 creator: 林一二
-modified: 20250424061754996
+modified: 20260221120000000
 modifier: 林一二
 tags: [[TidGi Feature Handbook]] AI
-title: TidGi Feature Handbook/Localized AI Copilot
+title: TidGi Feature Handbook/AI Assistant
 
-Local AI configuration tutorial:
+TidGi supports connecting to various large language models via external AI APIs (OpenAI-compatible format), offering agent conversations, vector semantic search, AI-generated backup titles, and more.
 
-# At least v0.9.6 or higher version of TidGi.
-## Install and open TidGi, open [[TidGi Settings]], find [[Language Model Settings]], click the "Open Model Folder" button to open the model folder.
-## Note that the folder name is `language-model`.
-# Download the `qwen1_5-32b-chat-q4_k_m.gguf` AI model File on [[Qwen/Qwen1.5-32B-Chat-GGUF|https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF]].
-## Rename the downloaded `qwen1_5-32b-chat-q4_k_m.gguf` model file to `llama.gguf` (or change the name of the model file to be loaded in [[Language Model Settings]], default is `llama.gguf`)
-## You can also choose to download the smaller but dumber models, or the bigger, smarter and slower model.
-## Some experts also recommend downloading models with `uncensored` in their names, because [[unaligned, but better performance|https://erichartford.com/uncensored-models]]
-# Put `llama.gguf` into the model folder `language-model` that you just opened by clicking the button.
-# You're ready to go!
+<<tree prefix:"TidGi Feature Handbook/AI Assistant/">>
 
 Using the tutorial:
 

@@ -1,0 +1,25 @@
+created: 20260221120000000
+creator: 林一二
+modified: 20260221120000000
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/AI Assistant/AI Auto-Generate Backup Title
+type: text/vnd.tiddlywiki
+
+When enabled, TidGi sends the list of changed files to the AI after each save, and the AI automatically writes the Git commit message — no manual input needed.
+
+!! How to Enable
+
+# Open TidGi settings
+# Find the "AI Settings" (or "External API Settings") section
+# Enable "AI Auto-Generate Backup Title"
+
+!! Result
+
+* After each save that triggers a backup, TidGi waits for the AI to return a message before writing the Git commit
+* In the [[TidGi Feature Handbook/Cloud Backup/View Backup History]] window, you will see meaningful AI-generated commit titles (e.g. "Updated Index tiddler: added AI testing content")
+
+!! Notes
+
+* This feature requires the language model to be configured in [[TidGi Feature Handbook/AI Assistant/Configure External AI API]]
+* If the AI endpoint is unavailable, the backup still runs normally using the default title "Backup with TidGi Desktop"
