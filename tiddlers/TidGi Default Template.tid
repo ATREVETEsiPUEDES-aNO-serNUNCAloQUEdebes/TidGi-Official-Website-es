@@ -4,8 +4,8 @@ creator: 林一二
 description: Default wiki template for TidGi-Desktop. From author of TidGi-Mobile.
 fallbackUrls: 
 language: en
-modified: 20240211085327767
+modified: 20260609163323526
 modifier: 林一二
 tags: WikiTemplates ServerList OutOfBox
 title: TidGi Default Template
-url: https://tiddlywiki-nodejs-github-template.cpolar.top/
+url: https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template/

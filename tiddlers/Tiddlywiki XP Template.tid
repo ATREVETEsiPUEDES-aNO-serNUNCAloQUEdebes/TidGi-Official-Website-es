@@ -4,8 +4,8 @@ creator: 林一二
 description: A chance to experience TiddlyWiki very quickly
 fallbackUrls: 
 language: en
-modified: 20240211115508218
+modified: 20260609163257727
 modifier: 林一二
 tags: WikiTemplates ServerList Pure
 title: Tiddlywiki XP Template
-url: https://tiddlywiki-xp-nodejs-template.cpolar.top/
+url: https://github.com/keatonlao/tiddlywiki-xp-nodejs-template/
