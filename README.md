@@ -11,6 +11,8 @@
 
 ## DLC
 
-Use [scripts/download-installers.mjs](../scripts/download-installers.mjs) to download installer exe/zip/dmg to this folder.
+Use [scripts/download-installers.mjs](scripts/download-installers.mjs) to download installer exe/zip/dmg to `files/downloaders`.
 
-Binary files in this folder should be gitignored, because files are large and updated frequently. When setup website on a server, please use things like `pm2` to run the download-installers script periodically.
+Binary files in `files/downloaders` should be gitignored, because files are large and updated frequently. When setup website on a server, please use things like `pm2` to run the download-installers script periodically.
+
+The downloader uses `socks5h://127.0.0.1:1080` by default. Override it with `DOWNLOAD_PROXY`, or set `DOWNLOAD_PROXY=direct` to disable proxy usage.

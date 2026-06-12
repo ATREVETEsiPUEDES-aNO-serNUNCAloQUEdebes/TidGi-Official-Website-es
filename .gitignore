@@ -13,7 +13,7 @@ tiddlers/$__layout.json
 tiddlers/$__layout.json.meta
 tiddlers/$__layout.tid
 
-files/
+files/downloaders/
 .env
 # for TiddlyWiki
 dist/

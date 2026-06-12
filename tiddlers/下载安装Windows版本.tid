@@ -7,13 +7,11 @@ title: 下载安装Windows版本
 type: text/vnd.tiddlywiki
 
 @@.installer-download-links-container
-[ext[64位自动安装.exe|./files/Install-TidGi-Windows-x64.exe]] （推荐，方便更新）
+[ext[64位自动安装.exe|./files/downloaders/Install-TidGi-Windows-x64.exe]] （推荐，方便更新）
 
-[ext[64位自选安装目录|./files/Install-TidGi-Windows-x64.msi]] （可选安装目录，每次更新都要手动重新选，容易忘，而且卸载时会删光所在文件夹的所有文件，一定要小心）
+[ext[64位Arm架构自动安装.exe|./files/downloaders/Install-TidGi-Windows-arm64.exe]]
 
 !!! 其他安装器
 
-[ext[64位Arm架构自动安装.exe|./files/Install-TidGi-Windows-arm64.exe]] [ext[64位Arm架构自选安装目录|./files/Install-TidGi-Windows-arm64.msi]]
-
-[ext[32位自动安装.exe|./files/Install-TidGi-Windows-ia32.exe]] [ext[32位自选安装目录|./files/Install-TidGi-Windows-ia32.msi]]
+[ext[64位MSIX应用包|./files/downloaders/TidGi-win32-x64-latest.msix]] [ext[64位Arm架构MSIX应用包|./files/downloaders/TidGi-win32-arm64-latest.msix]]
 @@
