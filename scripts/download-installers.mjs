@@ -1,8 +1,7 @@
 import path from 'path';
 import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
-import { mkdir, rename, rm, stat } from 'fs/promises';
-import Bluebird from 'bluebird';
+import { mkdir, rename as moveFile, rm, stat } from 'fs/promises';
 import { backOff } from 'exponential-backoff';
 import 'dotenv/config';
 
@@ -11,11 +10,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const downloadFolder = path.join(__dirname, '../files/downloaders');
 const proxyUrl = process.env.DOWNLOAD_PROXY ?? 'socks5h://127.0.0.1:1080';
 const useProxy = proxyUrl !== '' && !['0', 'false', 'none', 'direct'].includes(proxyUrl.toLowerCase());
+const cleanDownloadFolder = !['0', 'false', 'no'].includes((process.env.DOWNLOAD_CLEAN ?? 'true').toLowerCase());
 const curlCommand = process.platform === 'win32' ? 'curl.exe' : 'curl';
 
 /* 
 set DOWNLOAD_PROXY=socks5h://127.0.0.1:1080
 set DOWNLOAD_PROXY=direct
+set DOWNLOAD_CLEAN=false
 */
 
 function getHeaderArgs(headers) {
@@ -24,6 +25,10 @@ function getHeaderArgs(headers) {
 
 function getProxyArgs() {
   return useProxy ? ['--proxy', proxyUrl] : [];
+}
+
+function getWindowsCurlArgs() {
+  return process.platform === 'win32' ? ['--ssl-no-revoke'] : [];
 }
 
 async function runCurl(args) {
@@ -67,6 +72,8 @@ async function fetchJson(url) {
     '--location',
     '--silent',
     '--show-error',
+    '--http1.1',
+    ...getWindowsCurlArgs(),
     '--connect-timeout',
     '30',
     ...getProxyArgs(),
@@ -82,11 +89,17 @@ async function downloadFile(url, headers, destination) {
     '--location',
     '--silent',
     '--show-error',
+    '--http1.1',
+    ...getWindowsCurlArgs(),
     '--connect-timeout',
     '30',
     '--retry',
-    '5',
+    '20',
     '--retry-all-errors',
+    '--retry-delay',
+    '3',
+    '--continue-at',
+    '-',
     ...getProxyArgs(),
     ...getHeaderArgs(headers),
     '--output',
@@ -108,27 +121,51 @@ const mobileUrls = latestMobileReleaseData.assets.map((asset) => asset.browser_d
 console.log(desktopUrls);
 console.log(mobileUrls);
 console.log(`Download proxy: ${useProxy ? proxyUrl : 'direct'}`);
+console.log(`Clean download folder: ${cleanDownloadFolder}`);
 // download urls to `files/downloaders` folder
 
-async function downloadAsset(asset, rename) {
-  const fileName = rename(asset.name);
+async function hasExpectedSize(filePath, expectedSize) {
+  try {
+    const stats = await stat(filePath);
+    return stats.size === expectedSize;
+  } catch {
+    return false;
+  }
+}
+
+async function downloadAsset(asset, getFileName) {
+  const fileName = getFileName(asset.name);
   console.log(`Downloading ${fileName} from ${asset.browser_download_url}`);
   const headers = getGithubHeaders('application/octet-stream');
   const destination = path.join(downloadFolder, fileName);
   const temporaryDestination = `${destination}.download`;
-  await rm(temporaryDestination, { force: true });
+  if (await hasExpectedSize(destination, asset.size)) {
+    console.log(`Skip ${fileName}; existing file size is already verified`);
+    return;
+  }
+  if (await hasExpectedSize(temporaryDestination, asset.size)) {
+    await rm(destination, { force: true });
+    await moveFile(temporaryDestination, destination);
+    console.log(`Done ${fileName}`);
+    console.log(`File size verified for ${fileName}`);
+    return;
+  }
   try {
     await downloadFile(asset.browser_download_url, headers, temporaryDestination);
     const stats = await stat(temporaryDestination);
     if (stats.size !== asset.size) {
+      await rm(temporaryDestination, { force: true });
       throw new Error(`File size mismatch for ${fileName}: expected ${asset.size}, got ${stats.size}`);
     }
     await rm(destination, { force: true });
-    await rename(temporaryDestination, destination);
+    await moveFile(temporaryDestination, destination);
     console.log(`Done ${fileName}`);
     console.log(`File size verified for ${fileName}`);
   } catch (error) {
-    await rm(temporaryDestination, { force: true });
+    try {
+      const stats = await stat(temporaryDestination);
+      console.log(`Kept partial download for ${fileName}: ${stats.size}/${asset.size} bytes`);
+    } catch {}
     console.log(`Error downloading ${fileName}`, error);
     throw error;
   }
@@ -139,7 +176,7 @@ function renameDesktopAsset(name) {
   return fileName.replace(/^tidgi-latest-/, 'TidGi-latest-');
 }
 
-async function downloadAssetWithBackoff(asset, rename) {
+async function downloadAssetWithBackoff(asset, getFileName) {
   let retryCount = 0;
   await backOff(
     async () => {
@@ -149,31 +186,22 @@ async function downloadAssetWithBackoff(asset, rename) {
         console.log(`Start ${asset.name}`);
       }
       retryCount += 1;
-      await downloadAsset(asset, rename);
+      await downloadAsset(asset, getFileName);
     },
-    { numOfAttempts: 10000, jitter: 'full' },
+    { numOfAttempts: 20, jitter: 'full' },
   );
 }
 
-let chunkCounter = 0;
-
-await rm(downloadFolder, { recursive: true, force: true });
+if (cleanDownloadFolder) {
+  await rm(downloadFolder, { recursive: true, force: true });
+}
 await mkdir(downloadFolder, { recursive: true });
-await Promise.all([
-  ...latestDesktopReleaseData.assets.map(async (asset) => {
-    chunkCounter += 1;
-    if (chunkCounter > latestDesktopReleaseData.assets.length / 2) {
-      await Bluebird.delay(20000 * Math.random());
-    } else {
-      await Bluebird.delay(5000 * Math.random());
-    }
-    await downloadAssetWithBackoff(asset, renameDesktopAsset);
-  }),
-  ...latestMobileReleaseData.assets.map(async (asset) => {
-    await Bluebird.delay(10000 * Math.random());
-    await downloadAssetWithBackoff(asset, (name) => {
-      const fileName = name.replace('app-release-signed', 'TidGi-Mobile');
-      return fileName;
-    });
-  }),
-]);
+for (const asset of latestDesktopReleaseData.assets) {
+  await downloadAssetWithBackoff(asset, renameDesktopAsset);
+}
+for (const asset of latestMobileReleaseData.assets) {
+  await downloadAssetWithBackoff(asset, (name) => {
+    const fileName = name.replace('app-release-signed', 'TidGi-Mobile');
+    return fileName;
+  });
+}
