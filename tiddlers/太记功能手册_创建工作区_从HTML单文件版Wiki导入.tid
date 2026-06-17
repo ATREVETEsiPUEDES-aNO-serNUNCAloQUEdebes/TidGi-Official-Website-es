@@ -1,20 +1,20 @@
 created: 20250424053853159
-creator: 林一二
+creator: Lin Yier
 modified: 20250424055527577
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/创建工作区/从HTML单文件版Wiki导入
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Crea un espacio de trabajo/deHTMLVersion de archivo unicoWikiImportar
 type: 
 
-! 创建主知识库（作为公开知识库）
+! Crear una base de conocimientos maestra (como base de conocimientos publicos）
 
-# 点击太记侧边栏上的加号 + 按钮，打开新建工作区弹框
-# 选中''导入WIKI.HTML''标签页。
+# Haz clic en el signo mas en la barra lateral de Taiji. + boton para abrir el cuadro emergente del nuevo espacio de trabajo
+# Seleccione''ImportarWIKI.HTML''Pestanas。
 
-[img[屏幕截图-从HTML单文件版Wiki导入.png]]
+[img[Captura de pantalla-deHTMLVersion de archivo unicoWikiImportar.png]]
 
-# 填写你想导入的 HTML Tiddlywiki 文件的路径。点击右边的「选择」按钮可以打开文件选择对话框。
-# 在''文件夹的父文件夹''中，选择您希望存储知识库的路径。默认为桌面，意思是我们将创建一个文件夹用来放你的笔记，这个新的文件夹将放在桌面上。
-# 在「转换后的Wiki文件夹名称」里，填写知识库文件夹名称，如 Wiki。你的知识库会放在这个文件夹里。
-# 确保''主知识库''选项已开启，此选项保证你的文件夹能被太记打开，而且会为你创建太微的配置文件，之后在有需要时可用于公开发布。
-# 点击''创建WIKI''按钮，即可在指定路径创建一个主知识库。
+# Complete la informacion que desea importar HTML Tiddlywiki La ruta del archivo. Haga clic a la derecha「Seleccionar」Boton para abrir el cuadro de dialogo de seleccion de archivos.。
+# en''Carpeta principal de una carpeta.''En , seleccione la ruta donde desea almacenar la base de conocimientos. El valor predeterminado es el escritorio, lo que significa que crearemos una carpeta para colocar sus notas y esta nueva carpeta se colocara en el escritorio.。
+# en「ConvertidoWikiNombre de la carpeta」Aqui, complete el nombre de la carpeta de la base de conocimientos, como Wiki。Su base de conocimientos se colocara en esta carpeta.。
+# asegurar''Base de conocimientos principal''La opcion esta activada. Esta opcion garantiza que Taiji pueda abrir su carpeta y que se creara un archivo de configuracion de Taiwei para usted, que podra utilizar para su publicacion publica cuando sea necesario.。
+# Haga clic''CrearWIKI''boton para crear una base de conocimientos principal en la ruta especificada。

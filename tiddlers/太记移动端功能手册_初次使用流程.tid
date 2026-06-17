@@ -1,22 +1,22 @@
 created: 20230911153528633
-creator: 林一二
+creator: Lin Yier
 modified: 20240211060959818
-modifier: 林一二
-tags: 太记移动端功能手册
-title: 太记移动端功能手册/初次使用流程
+modifier: Lin Yier
+tags: Manual de funciones del terminal movil Taiji
+title: Manual de funciones del terminal movil Taiji/Proceso de uso por primera vez
 
-!! 从桌面版同步已有的知识库
+!! Sincronice la base de conocimientos existente desde la version de escritorio
 
-# 首先确保太记桌面端已经配置完毕
-## 最新版太记应该已经自带了 Mobile-Sync 插件，但你可能需要通过 [[CPL|https://tw-cn.netlify.app/#%E5%AE%89%E8%A3%85CPL%E6%8F%92%E4%BB%B6%E6%BA%90]] 更新它的版本到最新版
-## 确保[[桌面端的 HTTP API 功能|太记功能手册/开启 HTTP API]]打开了
-## 在电脑端的知识库里的侧边栏上，可以看到 MobileSync 标签页，点击打开它，可以看到一个二维码
-# 在移动端APP上，使用移动端首页底部的「扫描二维码」按钮可以进入「添加Wiki工作区」功能
-## 如果你进入了某个工作区（打开了 Wiki 或网页），左滑返回可以回到首页
-# 首页右上角的齿轮按钮，点击后可以打开设置页面
-## 建议在实际开始使用之前，到设置里设置一下「用户名」
+# Primero asegurese de que el escritorio Taiji este configurado
+## La ultima version de Taiji ya deberia venir con el. Mobile-Sync Complementos, pero es posible que debas aprobarlos. [[CPL|https://tw-cn.netlify.app/#%E5%AE%89%E8%A3%85CPL%E6%8F%92%E4%BB%B6%E6%BA%90]] Actualice su version a la ultima version.
+## asegurar[[Escritorio HTTP API Funcion|Manual de funciones de Taiji/Enciende HTTP API]]Abierto
+## En la barra lateral de la base de conocimientos de la computadora, puede ver MobileSync Pestana, haga clic para abrirla, puede ver un codigo QR
+# En el movilAPPEn la pagina movil, utilice el「Escanea el codigo QR」El boton puede ingresar「AgregarWikiEspacio de trabajo」Funcion
+## Si ingresa a un espacio de trabajo (abrir Wiki o pagina web), deslice hacia la izquierda para regresar a la pagina de inicio
+# Haga clic en el boton de engranaje en la esquina superior derecha de la pagina de inicio para abrir la pagina de configuracion.
+## Se recomienda configurarlo en la configuracion antes de comenzar a usarlo.「Nombre de usuario」
 
-!! 如果你没有电脑
+!! Si no tienes computadora
 
-# 参考[[太记移动端功能手册/从模板创建]]创建你的第一个知识库。
-# 之后可以随时长按列表里的工作区，打开工作区设置，添加电脑端同步，参考[[太记移动端功能手册/添加想同步的桌面端]]
+# Referencia[[Manual de funciones del terminal movil Taiji/Crear desde plantilla]]Crea tu primera base de conocimientos。
+# Luego puede mantener presionado el espacio de trabajo en la lista en cualquier momento, abrir la configuracion del espacio de trabajo y agregar sincronizacion de computadora, consulte[[Manual de funciones del terminal movil Taiji/Agrega el escritorio que deseas sincronizar]]

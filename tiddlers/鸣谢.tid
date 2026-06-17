@@ -1,18 +1,18 @@
 created: 20230601043036809
-creator: 马不前
+creator: Deja de seguir adelante
 modified: 20230601145048948
-modifier: 林一二
+modifier: Lin Yier
 tags: zh-Hans FrontPage
-title: 鸣谢
+title: Agradecimientos
 type: text/vnd.tiddlywiki
 
-这个桌面应用程序一开始仅仅是一个基于[[atomery/singlebox|https://github.com/atomery/singlebox]]和[[atomery/webcatalog|https://github.com/atomery/webcatalog]]开发的 NodeJS 版太微的启动器。这两个可以从任意网站生成桌面App的应用程序提供了很多工具，比单纯使用Chrome从网站生成的PWA应用程序强大得多。另外，在我开发TidGi时，这些伟大的工具背后的独立开发者 @quanglam2807 对我帮助很大。
+Esta aplicacion de escritorio comenzo como solo una[[atomery/singlebox|https://github.com/atomery/singlebox]]y[[atomery/webcatalog|https://github.com/atomery/webcatalog]]Desarrollado NodeJS Lanzador Taiwei. Estos dos pueden generar escritorios desde cualquier sitio web.AppLa aplicacion proporciona muchas herramientas ademas de simplemente usarChromeGenerado desde el sitio webPWALa aplicacion es mucho mas poderosa. Ademas, cuando desarrolloTidGiLos desarrolladores independientes detras de estas fantasticas herramientas @quanglam2807 Me ayuda mucho。
 
-目前的图标是从[[iconsdb|https://www.iconsdb.com/custom-color/github-11-icon.html]]下载的，属于 Creative Commons Attribution-NoDerivs 3.0 ，如果你是一个设计师，且有更好的想法，请随时贡献你的图标。
+El icono actual es de[[iconsdb|https://www.iconsdb.com/custom-color/github-11-icon.html]]Descargado, perteneciente a Creative Commons Attribution-NoDerivs 3.0 ，Si eres disenador y tienes mejores ideas, no dudes en contribuir con tus iconos.。
 
-!!! 点个星星 ⭐️ 吧
+!!! Senala una estrella ⭐️ barra
 
-如果你喜欢它，请给一颗星!
+Si te gusta, dale una estrella.!
 
 <a href="https://starchart.cc/tiddly-gittly/TidGi-Desktop">
 <$image source="https://starchart.cc/tiddly-gittly/TidGi-Desktop.svg" />

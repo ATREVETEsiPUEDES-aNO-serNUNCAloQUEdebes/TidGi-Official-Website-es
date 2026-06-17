@@ -1,12 +1,12 @@
 created: 20240211100206162
-creator: 林一二
+creator: Lin Yier
 modified: 20240211100244113
-modifier: 林一二
+modifier: Lin Yier
 tags: Topic
 title: HelpPage
 
 <$list filter="[<lang>search[zh]]">
-	在线帮助知识库列表。
+	Lista de la base de conocimientos de ayuda en linea。
 </$list>
 
 <$list filter="[<lang>!search[zh]]">

@@ -1,24 +1,24 @@
 created: 20240919075920683
-creator: 林一二
+creator: Lin Yier
 modified: 20240919080847642
-modifier: 林一二
+modifier: Lin Yier
 tags: TidGi-Mobile zh-Hans
-title: 太记移动端直链下载
+title: Descarga del enlace directo del terminal movil Taiji
 
 @@.installer-download-links-container
 
-!!! Github Release（Github 可信验证）（需科学上网）
+!!! Github Release（Github Verificacion creible) (requiere acceso cientifico a Internet）
 
-[ext[点击从 Github 下载太记移动端|https://github.com/tiddly-gittly/TidGi-Mobile/releases/latest/download/app-release-signed.apk]]
+[ext[Haga clic en Github Descargue el terminal movil Taiji|https://github.com/tiddly-gittly/TidGi-Mobile/releases/latest/download/app-release-signed.apk]]
 
-!!! Github Release（国内镜像）
+!!! Github Release（Duplicacion domestica）
 
-[ext[点击从 Github（国内镜像）下载太记移动端|https://ghp.ci/https://github.com/tiddly-gittly/TidGi-Mobile/releases/latest/download/app-release-signed.apk]]
+[ext[Haga clic en Github（Espejo domestico) Descargar terminal movil Taiji|https://ghp.ci/https://github.com/tiddly-gittly/TidGi-Mobile/releases/latest/download/app-release-signed.apk]]
 
-!!! 直链下载
+!!! Descarga por enlace directo
 
-感谢「位面张量」公司赞助的服务器。
+gracias「Tensor del plano de bits」Servidores patrocinados por la empresa。
 
-[ext[点击从官网服务器下载太记移动端|./files/downloaders/TidGi-Mobile.apk]]
+[ext[Haga clic para descargar el terminal movil Taiji desde el servidor del sitio web oficial.|./files/downloaders/TidGi-Mobile.apk]]
 
 @@

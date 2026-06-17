@@ -1,28 +1,28 @@
 created: 20230902145429811
-creator: 林一二
+creator: Lin Yier
 modified: 20240829131444077
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/开启 HTTP API
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Enciende HTTP API
 
-!! 开启方法
+!! Metodo de apertura
 
-在太记侧边栏上：
+En la barra lateral de Taiji：
 
-右键工作区图标-配置工作区-博客和服务器设置-启用HTTP API
+Haga clic derecho en el icono del espacio de trabajo.-Configurar el espacio de trabajo-Configuracion de blog y servidor-HabilitarHTTP API
 
-!! 开启的作用
+!! La funcion de apertura.
 
-可以使用[[TW-MobiLe-Sync手机移动端同步TidGi桌面端|太记移动端功能手册/添加想同步的桌面端]]了，因为它是用HTTP API来同步数据的。
+Se puede utilizar[[TW-MobiLe-SyncSincronizacion de telefonos movilesTidGiEscritorio|Manual de funciones del terminal movil Taiji/Agrega el escritorio que deseas sincronizar]]Porque se usaHTTP APIPara sincronizar datos。
 
-可以开博客了，参考[[在手机上运行太微nodejs博客|https://wiki.onetwo.ren/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E5%A4%AA%E5%BE%AEnodejs%E5%8D%9A%E5%AE%A2]]，或[[太记功能手册/通过内网穿透开设博客]]。
+Puede iniciar un blog, consulte[[Ejecute Taiwei en su telefono movilnodejsBlog|https://wiki.onetwo.ren/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E5%A4%AA%E5%BE%AEnodejs%E5%8D%9A%E5%AE%A2]]，o[[Manual de funciones de Taiji/Abra un blog mediante la penetracion de la intranet.]]。
 
-可以和第三方应用互相同步数据，如果第三方应用适配了太记 HTTP API 的话。
+Los datos se pueden sincronizar con aplicaciones de terceros. Si la aplicacion de terceros esta adaptada a Taiji HTTP API palabras。
 
-!! 注意安全
+!! Presta atencion a la seguridad
 
-开启后，同一个 Wifi 局域网里的其他人都能访问你的笔记，所以这个功能默认关闭。使用需要注意信息安全！
+Despues de abrir, lo mismo. Wifi Todos los demas en la LAN pueden acceder a sus notas, por lo que esta funcion esta desactivada de forma predeterminada. Preste atencion a la seguridad de la informacion cuando utilice！
 
-!!! 报错 401
+!!! Informar errores 401
 
-如果开启了「凭证鉴权」功能，就会报这个错，401 意思就是凭证无效拒绝访问。「凭证鉴权」功能需要懂 Web 技术才能用，但是能大大增加安全性。
+Si esta habilitado「Autenticacion de credenciales」Funcion, se informara este error.，401 Significa que las credenciales no son validas y se deniega el acceso.。「Autenticacion de credenciales」Es necesario comprender las funciones Web Solo se puede utilizar tecnologia, pero puede aumentar considerablemente la seguridad.。

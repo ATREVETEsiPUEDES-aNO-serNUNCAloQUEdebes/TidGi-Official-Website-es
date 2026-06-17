@@ -1,30 +1,30 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/在新窗口打开工作区
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Abra el espacio de trabajo en una nueva ventana.
 type: text/vnd.tiddlywiki
 
-太记支持在独立的新窗口中打开同一个工作区，两个窗口的内容通过 SSE 实时双向同步。
+Taiji admite la apertura del mismo espacio de trabajo en una nueva ventana separada y el contenido de las dos ventanas se comparte a traves de SSE Sincronizacion bidireccional en tiempo real。
 
-!! 打开新窗口
+!! Abrir nueva ventana
 
-右键点击左侧栏的工作区图标，选择「在新窗口打开」，该工作区会在一个独立窗口中打开。
+Haga clic derecho en el icono del espacio de trabajo en la columna de la izquierda y seleccione「Abrir en ventana nueva」，El espacio de trabajo se abrira en una ventana separada.。
 
-!! 跨窗口实时同步
+!! Sincronizacion en tiempo real entre ventanas
 
-* 在任意一个窗口中修改条目（保存后），另一个窗口会自动收到推送并刷新该条目
-* 同步是双向的：主窗口改动推到新窗口，新窗口改动也推回主窗口
-* 底层使用 SSE（Server-Sent Events）实现推送，延迟极低
+* Modifique una entrada en cualquier ventana (despues de guardarla), y la otra ventana recibira automaticamente el envio y actualizara la entrada.
+* La sincronizacion es bidireccional: los cambios en la ventana principal se envian a la nueva ventana y los cambios en la nueva ventana tambien se envian a la ventana principal.
+* Uso de bajo nivel SSE（Server-Sent Events）Implemente el empuje con un retraso extremadamente bajo
 
-!! 适用场景
+!! Escenarios aplicables
 
-* 在一个窗口中查阅参考资料，在另一个窗口中撰写笔记
-* 多显示器用户在不同屏幕上同时展示同一个工作区的不同条目
-* 将新窗口用作「只读展示屏」，在主窗口编辑
+* Consulte los materiales de referencia en una ventana y escriba notas en otra ventana.
+* Los usuarios de varios monitores pueden mostrar diferentes elementos del mismo espacio de trabajo en diferentes pantallas al mismo tiempo.
+* Utilice la nueva ventana como「Pantalla de visualizacion de solo lectura」，Editar en la ventana principal.
 
-!! 注意
+!! Atencion
 
-* 两个窗口共用同一个后端进程，不会额外占用大量内存
-* 关闭主窗口不会关闭新窗口（两者独立）
+* Las dos ventanas comparten el mismo proceso de backend y no ocupan una gran cantidad de memoria adicional.
+* Cerrar la ventana principal no cerrara la nueva ventana (las dos son independientes）

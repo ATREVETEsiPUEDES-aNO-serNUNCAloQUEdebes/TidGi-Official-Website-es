@@ -1,25 +1,25 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/AI助手/AI自动生成备份标题
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/AIasistente/AIGenerar automaticamente titulos de respaldo
 type: text/vnd.tiddlywiki
 
-开启后，每次 Git 备份时太记会将本次变更的文件列表发送给 AI，由 AI 自动撰写提交消息（commit message），无需手动输入备份说明。
+Despues de encender, cada vez Git Al realizar la copia de seguridad, Taiji enviara la lista de archivos modificados a AI，Por AI Redactar mensajes de confirmacion automaticamente（commit message），No es necesario ingresar manualmente las instrucciones de respaldo。
 
-!! 开启方式
+!! Metodo de apertura
 
-# 打开太记设置
-# 找到「AI 设置」（或「外部接口设置」）部分
-# 开启「AI自动生成备份标题」选项
+# Abra la configuracion de Taiji
+# encontrar「AI Configuracion」（o「Configuracion de la interfaz externa」）Parte
+# Enciende「AIGenerar automaticamente titulos de respaldo」Opciones
 
-!! 效果
+!! Efecto
 
-* 每次保存后触发备份时，太记会等待 AI 返回消息后再写入 Git commit
-* 在[[太记功能手册/云端备份/查看历史备份]]窗口中，可以看到 AI 生成的有意义的提交标题（如"更新 Index 条目：添加关于 AI 测试的内容"）
+* Cada vez que se activa una copia de seguridad despues de guardar, Taiji esperara AI Escribe despues de devolver el mensaje. Git commit
+* en[[Manual de funciones de Taiji/Copia de seguridad en la nube/Ver copias de seguridad historicas]]En la ventana, puedes ver AI Genere titulos de envio significativos (p. ej."Actualizacion Index Entrada: Agregar Acerca de AI Contenido de la prueba"）
 
-!! 注意
+!! Atencion
 
-* 此功能需要先完成[[太记功能手册/AI助手/配置外部AI接口]]中的语言模型配置
-* 若 AI 接口不可用，备份仍会正常执行，使用默认的"使用太记桌面版备份"作为提交标题
+* Esta funcion debe completarse primero.[[Manual de funciones de Taiji/AIasistente/Configurar externoAIInterfaz]]Configuracion del modelo de lenguaje en
+* Si AI Si la interfaz no esta disponible, la copia de seguridad aun se realizara normalmente, utilizando la configuracion predeterminada."Utilice la version de escritorio de Taiji para realizar copias de seguridad."Como titulo de presentacion

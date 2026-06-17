@@ -1,13 +1,13 @@
 created: 20230522160614265
-creator: 林一二
+creator: Lin Yier
 modified: 20240504062457696
-modifier: 林一二
+modifier: Lin Yier
 tags: zh-Hans FrontPage
-title: 太记
+title: Taiji
 type: text/vnd.tiddlywiki
 
 <div align="center">
-	<p>可定制性极强的个人知识管理系统，开源免费，使用 Git 作为免费自动增量备份管理器和免费博客平台</p>
+	<p>Un sistema de gestion del conocimiento personal altamente personalizable, de codigo abierto y de uso gratuito Git Como administrador de copias de seguridad incremental automatico gratuito y plataforma de blogs gratuita</p>
 	[img[https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg]]
 	<a href="https://github.com/tiddly-gittly/TidGi-Desktop/actions">
 		<$image source="https://github.com/tiddly-gittly/TidGi-Desktop/actions/workflows/release.yml/badge.svg" />
@@ -19,6 +19,6 @@ type: text/vnd.tiddlywiki
 
 <div align="center">
 
-[[下载]]
+[[Descargar]]
 
 </div>

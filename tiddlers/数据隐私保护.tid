@@ -1,25 +1,25 @@
 created: 20230601042316725
-creator: 马不前
+creator: Deja de seguir adelante
 modified: 20230601144757104
-modifier: 林一二
+modifier: Lin Yier
 tags: zh-Hans FrontPage
-title: 数据隐私保护
+title: Proteccion de la privacidad de los datos
 type: text/vnd.tiddlywiki
 
-!! 隐私：如何存储和使用数据
+!! Privacidad: como se almacenan y utilizan los datos
 
-我们不会从您的手机向互联网发送任何信息。
+No enviamos ninguna informacion desde tu telefono a Internet。
 
-您可以选择将手机中的数据同步到本地 WiFi 上的本地 TidGi-Desktop 应用程序。
+Puede optar por sincronizar los datos del telefono movil con el local WiFi Local en TidGi-Desktop Aplicaciones。
 
-!!! 它如何在手机上本地存储数据
+!!! Como almacena datos localmente en el telefono
 
-这是一款本地优先的应用程序，它以以下格式存储数据，并且永远不会离开本地 WiFi 网络：
+Esta es una primera aplicacion local, almacena datos en el siguiente formato y nunca sale local WiFi Red：
 
-# HTML，包含一些核心内容，如 `$:/boot` 和由 [$:/tags/RawMarkup](https://tiddlywiki.com/#SystemTag%3A%20%24%3A%2Ftags%2FRawMarkup) 创建的原始 HTML。
-## 要更新 TiddlyWiki 版本或原始标记，需要执行完全同步（删除并重新创建）
-# SQLite，添加维基时，我们会获取你的tid/md文件中的所有skinny-tiddlers，然后将它们存储在SQLite数据库中，以加快启动速度并节省内存。
-# JSON, 添加维基时，我们会以 JSON 格式获取所有插件的完整内容，这些内容将不会更新。
-# 文件，二进制文件（如图片）以文件形式存储在手机中。
+# HTML，Incluya algun contenido principal, p. `$:/boot` y por [$:/tags/RawMarkup](https://tiddlywiki.com/#SystemTag%3A%20%24%3A%2Ftags%2FRawMarkup) Crea el original HTML。
+## Para actualizar TiddlyWiki Version o etiqueta original, es necesario realizar una sincronizacion completa (eliminar y volver a crear)）
+# SQLite，Cuando agregas un wiki, obtendremos tutid/mdTodo lo que hay en el archivo.skinny-tiddlers，Luego guardalos enSQLiteBase de datos para acelerar el inicio y ahorrar memoria。
+# JSON, Al agregar un wiki, comenzaremos con JSON El formato obtiene el contenido completo de todos los complementos, que no se actualizaran.。
+# Los archivos, los archivos binarios (como imagenes) se almacenan en el telefono movil en forma de archivos.。
 
-之后，我们会使用同步适配器（Sync-Adaptor）来懒散地只加载所需的文件，以提高庞大维基的性能。同时，减少手机内存和 CPU 的消耗。
+Despues de eso, usaremos el adaptador de sincronizacion.（Sync-Adaptor）Mejorar el rendimiento de wikis de gran tamano cargando de forma diferida solo los archivos necesarios. Al mismo tiempo, reduzca la memoria del telefono y CPU Consumo de。

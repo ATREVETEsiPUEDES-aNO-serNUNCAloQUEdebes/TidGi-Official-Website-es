@@ -1,33 +1,33 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/AI助手/创建和自定义智能体
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/AIasistente/Crea y personaliza agentes
 type: text/vnd.tiddlywiki
 
-!! 创建新智能体
+!! Crea un nuevo agente
 
-# 在智能体工作区，点击「+」新标签页
-# 点击「创建新智能体」按钮
-# 按向导三步完成创建：
+# En el espacio de trabajo del agente, haga clic en「+」Nueva pestana
+# Haga clic「Crea un nuevo agente」Boton
+# Sigue los tres pasos del asistente para completar la creacion.：
 
-!!! 第一步：设置智能体
+!!! Paso 1: configurar el agente
 
-* 在搜索框中选择一个模板（内置模板、插件模板或云端模板均可）
-* 在名称输入框中为智能体起名，如「代码助手」
+* Seleccione una plantilla en el cuadro de busqueda (ya sea una plantilla integrada, una plantilla de complemento o una plantilla en la nube)）
+* Asigne un nombre al agente en el cuadro de entrada de nombre, como「Asistente de codigo」
 
-!!! 第二步：编辑提示词
+!!! Paso 2: Editar palabras clave
 
-* 展开提示词配置表单，切换到对应标签页
-* 展开数组项后编辑系统提示词文本框
-* 此处修改即为该智能体的默认提示词
+* Expanda el formulario de configuracion de palabras de aviso y cambie a la pagina de pestana correspondiente
+* Edite el cuadro de texto del mensaje del sistema despues de expandir el elemento de la matriz.
+* La modificacion aqui es la palabra de aviso predeterminada para el agente.
 
-!!! 第三步：测试并使用
+!!! Paso 3: prueba y uso
 
-* 在预览对话框中发送一条测试消息，验证效果
-* 确认无误后点击「保存并使用智能体」，智能体创建完成并立即开始新对话
+* Envie un mensaje de prueba en el cuadro de dialogo de vista previa para verificar el efecto.
+* Haga clic despues de la confirmacion.「Guarde y use el agente.」，Se crea el agente y se inicia inmediatamente una nueva conversacion.
 
-!! 修改已有智能体
+!! Modificar agentes existentes
 
-在任意对话标签页右上角点击智能体设置按钮，可修改当前对话的提示词。若需永久修改，在智能体工作区对应条目中编辑。
+Haga clic en el boton de configuracion del agente en la esquina superior derecha de cualquier pestana de dialogo para modificar las palabras del dialogo actual. Si necesita realizar cambios permanentes, editelos en la entrada correspondiente en el espacio de trabajo del agente.。

@@ -1,28 +1,28 @@
 created: 20230522163555567
-creator: 林一二
+creator: Lin Yier
 modified: 20231110070407145
-modifier: 林一二
-tags: 产品截图及试用
-title: 截图
+modifier: Lin Yier
+tags: Capturas de pantalla y pruebas de productos
+title: Captura de pantalla
 type: text/vnd.tiddlywiki
 
 [img[main-window-hide-bar.png]]
 
-<<details label:"更多截图" src:"
+<<details label:"Mas capturas de pantalla" src:"
 
-| 加载 NodeJS 版维基 |
+| Cargando NodeJS Version Wiki |
 |[img[main-window.png]]|
 
-| 新建本地维基 | 下载云端维基 |
+| Crea una nueva wiki local | Descargue la wiki de la nube |
 |[img[add-workspace.png]]|[img[clone-workspace.png]]|
 
-| 多语言翻译和设置界面 |
+| Interfaz de configuracion y traduccion en varios idiomas |
 |[img[preference.png]]|
 
-| 交互式代码执行 | 菜单栏快捷窗口 |
-|[img[Interactive code execution.gif]]| [img[太记小窗截图.png]]|
+| Ejecucion de codigo interactivo | Ventana de acceso directo de la barra de menu |
+|[img[Interactive code execution.gif]]| [img[Captura de pantalla de la pequena ventana de Taiji..png]]|
 
-| 社区插件源 |
+| Fuente del complemento comunitario |
 |[img[community-plugin-library.png]]|
 
 

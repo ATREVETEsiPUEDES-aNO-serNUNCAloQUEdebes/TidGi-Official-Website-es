@@ -1,33 +1,33 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/云端备份/查看历史备份
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Copia de seguridad en la nube/Ver copias de seguridad historicas
 type: text/vnd.tiddlywiki
 
-!! 打开历史备份窗口
+!! Abra la ventana de copia de seguridad historica.
 
-点击顶部菜单「知识库 → 查看历史备份」，打开 Git 历史日志窗口。
+Haz clic en el menu superior.「Base de conocimientos → Ver copias de seguridad historicas」，abierto Git Ventana de registro historico。
 
-!! 浏览提交记录
+!! Explorar registros de envio
 
-* 窗口左侧显示所有 Git commit 列表，按时间倒序排列
-* 每条记录显示提交时间和提交消息
-* 若当前有未提交的修改，列表顶部会自动显示「未提交变更」行
+* Mostrar todo en el lado izquierdo de la ventana. Git commit Lista, ordenada en orden cronologico inverso.
+* Cada registro muestra la hora de envio y el mensaje de envio.
+* Si hay modificaciones actualmente no confirmadas, se mostraran automaticamente en la parte superior de la lista.「Cambios no comprometidos」Esta bien
 
-!! 查看某次提交的文件变更
+!! Ver los cambios de archivos enviados en un momento determinado.
 
-点击任意一条提交记录，右侧面板会列出本次提交中变更的文件名。
+Haga clic en cualquier registro de envio y el panel derecho enumerara los nombres de archivo modificados en este envio.。
 
-!! 立即提交当前变更
+!! Confirme los cambios actuales inmediatamente
 
-# 点击「未提交变更」行
-# 在右侧切换到「操作」标签页
-# 点击「立即提交」按钮
-# 若已开启[[太记功能手册/AI助手/AI自动生成备份标题]]，提交消息将由 AI 自动生成
+# Haga clic「Cambios no comprometidos」Esta bien
+# En el lado derecho cambie a「Operacion」Pestanas
+# Haga clic「Enviar ahora」Boton
+# Si esta habilitado[[Manual de funciones de Taiji/AIasistente/AIGenerar automaticamente titulos de respaldo]]，Los mensajes de envio seran enviados por AI Generado automaticamente
 
-!! 说明
+!! Descripcion
 
-* 此窗口为只读查看，不支持回滚或检出历史版本（如需回滚请使用命令行 `git checkout`）
-* 要将提交推送到远端，仍需通过菜单「知识库 → 立即同步到云端」
+* Esta ventana es de solo lectura y no admite la reversion ni el check-out de versiones historicas (si necesita revertir, utilice la linea de comando `git checkout`）
+* Para enviar el envio al extremo remoto, aun debe pasar por el menu「Base de conocimientos → Sincroniza instantaneamente con la nube」

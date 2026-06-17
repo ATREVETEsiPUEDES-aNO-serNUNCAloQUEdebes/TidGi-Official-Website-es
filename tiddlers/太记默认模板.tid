@@ -1,11 +1,11 @@
 contribute: https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template/
 created: 20240211085157016
-creator: 林一二
-description: 太记桌面版的默认知识库模板。来自太记移动版的作者。
+creator: Lin Yier
+description: La plantilla de base de conocimientos predeterminada de la version de escritorio de Taiji. Del autor de Taiji Mobile Edition。
 fallbackUrls: 
 language: zh_CN
 modified: 20260609163313709
-modifier: 林一二
+modifier: Lin Yier
 tags: WikiTemplates ServerList OutOfBox
-title: 太记默认模板
+title: Plantilla predeterminada de Taiji
 url: https://github.com/tiddly-gittly/Tiddlywiki-NodeJS-Github-Template/

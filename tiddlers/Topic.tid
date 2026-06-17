@@ -1,7 +1,7 @@
 created: 20231227083947794
-creator: 林一二
+creator: Lin Yier
 modified: 20231227084140256
-modifier: 林一二
+modifier: Lin Yier
 tags: Index
 title: Topic
 
@@ -9,7 +9,7 @@ title: Topic
 
 	<$list filter="[<lang>search[zh]]">
 
-		此标签用于放置可分享给其他人的资源，会自动根据使用者浏览器语言翻译。
+		Esta etiqueta se utiliza para colocar recursos que se pueden compartir con otros y se traduciran automaticamente segun el idioma del navegador del usuario.。
 
 	</$list>
 

@@ -1,10 +1,10 @@
 created: 20230522160729879
-creator: 林一二
-list: 试用 截图 额外说明
+creator: Lin Yier
+list: Capturas de pantalla de prueba Instrucciones adicionales
 modified: 20230601144703934
-modifier: 林一二
+modifier: Lin Yier
 tags: zh-Hans FrontPage
-title: 产品截图及试用
+title: Capturas de pantalla y pruebas de productos
 type: text/vnd.tiddlywiki
 
 <$list filter="[tag<currentTiddler>]">

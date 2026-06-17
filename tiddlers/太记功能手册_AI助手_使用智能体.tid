@@ -1,35 +1,35 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/AI助手/使用智能体
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/AIasistente/Utilice agentes
 type: text/vnd.tiddlywiki
 
-!! 打开智能体工作区
+!! Abra el espacio de trabajo del agente.
 
-点击左侧边栏的「智能体」图标（`workspace-agent`），进入智能体工作区。
+Haga clic en la barra lateral izquierda.「Agente」Iconos（`workspace-agent`），Ingrese al espacio de trabajo del agente.。
 
-!! 开始对话
+!! Iniciar una conversacion
 
-# 点击顶部「+」新标签页按钮
-# 在搜索框中选择一个智能体（如"默认智能体"），或直接在输入框提问
-# 在底部对话框输入问题后按 Enter 发送
+# Haz clic en la parte superior「+」Boton Nueva pestana
+# Seleccione un agente en el cuadro de busqueda (p. ej."Agente predeterminado"），O pregunte directamente en el cuadro de entrada
+# Ingrese la pregunta en el cuadro de dialogo inferior y presione Enter enviar
 
-智能体会自动调用以下工具完成复杂任务：
+El agente llamara automaticamente a las siguientes herramientas para completar tareas complejas.：
 
-* `wiki-search`：在工作区中按 TiddlyWiki 筛选器搜索条目
-* `wiki-operation`：在工作区中新建或修改条目
+* `wiki-search`：Presione en el espacio de trabajo. TiddlyWiki Filtrar terminos de busqueda
+* `wiki-operation`：Cree elementos nuevos o modifique elementos en el espacio de trabajo.
 
-!! 标签页管理
+!! Gestion de pestanas
 
-* 每次对话以标签页形式展示，标题由 AI 自动生成，可手动修改
-* 点击标签页右键可固定常用对话，便于快速找回
-* 点击顶部搜索按钮可搜索历史对话、最近关闭的标签页
+* Cada conversacion se muestra como una pestana, titulada por AI Generado automaticamente y se puede modificar manualmente.
+* Haga clic derecho en la pestana para fijar conversaciones utilizadas con frecuencia y recuperarlas rapidamente.
+* Haga clic en el boton de busqueda en la parte superior para buscar conversaciones historicas y pestanas cerradas recientemente.
 
-!! 对话界面顶部工具栏（从左到右）
+!! Barra de herramientas en la parte superior de la interfaz de conversacion (de izquierda a derecha）
 
-* 标题（可编辑）
-* 当前模型选择：切换本次对话使用的 AI 接口
-* 智能体设置：调整当前对话的提示词（仅对本次对话生效）
-* 提示词预览：查看即将发送给 AI 的完整提示词拼接结果
+* Titulo (editable）
+* Seleccion del modelo actual: cambie el modelo utilizado en esta conversacion AI Interfaz
+* Configuracion del agente: ajuste las palabras clave de la conversacion actual (solo es efectivo para esta conversacion）
+* Vista previa de palabra rapida: vea el mensaje que se enviara a AI El resultado completo de la union de palabras

@@ -1,30 +1,30 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/AI助手/配置外部AI接口
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/AIasistente/Configurar externoAIInterfaz
 type: text/vnd.tiddlywiki
 
-打开太记设置（点击左侧栏底部齿轮图标），找到「外部接口设置」，可以配置以下模型接口：
+Abra la configuracion de Taiji (haga clic en el icono de ajustes en la parte inferior de la columna izquierda) y busque「Configuracion de la interfaz externa」，Se pueden configurar las siguientes interfaces modelo：
 
-!! 语言模型（对话 / 智能体）
+!! Modelo de lenguaje (conversacion / Agente）
 
-填写兼容 OpenAI API 的服务地址（Base URL）和 API Key。例如：
+Complete el compatible OpenAI API Direccion de servicio（Base URL）y API Key。Por ejemplo：
 
-* 官方 OpenAI：`https://api.openai.com/v1`
-* 本地 Ollama：`http://localhost:11434/v1`
-* 任意兼容接口（DeepSeek、Azure OpenAI 等）均可
+* Oficial OpenAI：`https://api.openai.com/v1`
+* locales Ollama：`http://localhost:11434/v1`
+* Cualquier interfaz compatible（DeepSeek、Azure OpenAI etc.) son aceptables
 
-!! Embedding 模型（向量语义搜索）
+!! Embedding Modelo (busqueda semantica vectorial)）
 
-用于生成条目的向量索引，可与语言模型使用不同的接口或模型名称。需要单独配置。
+Indice de vector utilizado para generar entradas, que pueden utilizar una interfaz o nombre de modelo diferente al modelo de lenguaje. Requiere configuracion separada。
 
-!! 语音模型（语音转文字）
+!! Modelo de voz (voz a texto)）
 
-用于将录音转为文字后输入智能体。填写兼容 OpenAI Whisper API 的接口地址和模型名称。
+Se utiliza para convertir la grabacion en texto y luego ingresarla en el agente. Complete el compatible OpenAI Whisper API La direccion de la interfaz y el nombre del modelo.。
 
-!! 提示
+!! Consejos
 
-* 配置完成后，切换到[[太记功能手册/AI助手/使用智能体]]开始对话。
-* 若不需要某类模型功能，对应配置项留空即可。
+* Una vez completada la configuracion, cambie a[[Manual de funciones de Taiji/AIasistente/Utilice agentes]]Iniciar una conversacion。
+* Si no necesita un determinado tipo de funcion de modelo, simplemente deje en blanco el elemento de configuracion correspondiente.。

@@ -1,7 +1,7 @@
 created: 20240123045322023
-creator: 林一二
+creator: Lin Yier
 modified: 20250424061801446
-modifier: 林一二
+modifier: Lin Yier
 tags: [[TidGi Feature Handbook]]
 title: TidGi Feature Handbook/Reference External Files
 
@@ -42,7 +42,7 @@ In links, you need to include the `file://` prefix so TidGi can recognize it as 
 
 For example:
 
-> `[ext[Some External File Link with CJK character|file:///Users/linonetwo/Downloads/(OCRed)奖励的惩罚 (（美）科恩著) (Z-Library).pdf]]`
+> `[ext[Some External File Link with CJK character|file:///Users/linonetwo/Downloads/(OCRed)Castigo de recompensas (（Estados Unidos) de Cohen) (Z-Library).pdf]]`
 
 > `[ext[An External Folder Link|file:///Users/linonetwo/Downloads/]]`
 
@@ -51,9 +51,9 @@ Here `file:///` means `file://` at the beginning, plus `/` for the system root f
 !! More working examples
 
 ```js
-[img[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/截屏2023-06-21 12.40.20.png]]
+[img[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/Toma una captura de pantalla2023-06-21 12.40.20.png]]
 
-[[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/截屏2023-06-21 12.40.20.png]]
+[[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/Toma una captura de pantalla2023-06-21 12.40.20.png]]
 
 [img[file://files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg]]
 
@@ -67,9 +67,9 @@ Here `file:///` means `file://` at the beginning, plus `/` for the system root f
 
 [[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files]]
 
-[img[file://./files/截屏2023-06-21 12.40.20.png]]
+[img[file://./files/Toma una captura de pantalla2023-06-21 12.40.20.png]]
 
-[[file://./files/截屏2023-06-21 12.40.20.png]]
+[[file://./files/Toma una captura de pantalla2023-06-21 12.40.20.png]]
 
 [[file://./files/]]
 

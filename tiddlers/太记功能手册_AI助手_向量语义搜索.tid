@@ -1,38 +1,38 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/AI助手/向量语义搜索
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/AIasistente/Busqueda semantica de vectores
 type: text/vnd.tiddlywiki
 
-向量语义搜索让你可以用自然语言描述意图来搜索笔记，而不是依赖关键词完全匹配。
+La busqueda semantica vectorial le permite utilizar lenguaje natural para describir la intencion de buscar notas en lugar de depender de la concordancia exacta de palabras clave.。
 
-!! 前置条件
+!! Condiciones previas
 
-在[[太记功能手册/AI助手/配置外部AI接口]]中，配置好「Embedding 模型」接口。
+en[[Manual de funciones de Taiji/AIasistente/Configurar externoAIInterfaz]]Medio, configurado「Embedding modelo」Interfaz。
 
-!! 建立向量索引
+!! Crear indice de vectores
 
-在智能体对话框中，告诉智能体：
-
-```
-为 wiki 工作区更新向量索引
-```
-
-智能体会调用 `wiki-update-embeddings` 工具遍历所有条目并生成嵌入向量。完成后会提示索引条数。
-
-!! 语义搜索
-
-索引建立后，在对话中描述你要找的内容：
+En el cuadro de dialogo del agente, digale al agente：
 
 ```
-使用向量搜索在 wiki 中查找关于「如何使用AI智能体」的内容
+para wiki Indice de vectores de actualizacion del espacio de trabajo
 ```
 
-智能体会调用 `wiki-search`（`searchType: vector`）返回相似度最高的条目，并给出解释。
+El agente llamara `wiki-update-embeddings` La herramienta recorre en iteracion todas las entradas y genera vectores de incrustacion. Una vez completado, se le solicitara el numero de entradas del indice.。
 
-!! 注意事项
+!! Busqueda semantica
 
-* 每次添加大量新条目后，重新执行一次「更新向量索引」以保持索引最新
-* 向量搜索结果以相似度百分比排序，70% 以上的结果通常相关性较高
+Una vez creado el indice, describe lo que buscas en la conversacion.：
+
+```
+Utilice la busqueda vectorial en wiki Informate sobre「Como utilizarAIAgente」Contenidos
+```
+
+El agente llamara `wiki-search`（`searchType: vector`）Devuelve el elemento con mayor similitud y da una explicacion.。
+
+!! Precauciones
+
+* Ejecutelo nuevamente cada vez que agregue una gran cantidad de entradas nuevas.「Actualizar el indice de vectores」Para mantener el indice actualizado
+* Los resultados de la busqueda de vectores se ordenan por porcentaje de similitud.，70% Los resultados anteriores suelen ser muy relevantes.

@@ -1,12 +1,12 @@
 created: 20240211084148255
-creator: 林一二
+creator: Lin Yier
 modified: 20240211084913631
-modifier: 林一二
+modifier: Lin Yier
 tags: Topic
 title: WikiTemplates
 
 <$list filter="[<lang>search[zh]]">
-	用于在太记里初始化知识库用的模板。
+	Plantilla utilizada para inicializar la base de conocimientos en Taiji.。
 </$list>
 
 <$list filter="[<lang>!search[zh]]">

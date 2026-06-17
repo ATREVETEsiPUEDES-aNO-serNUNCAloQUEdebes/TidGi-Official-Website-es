@@ -1,7 +1,7 @@
 created: 20250424052737271
-creator: 林一二
+creator: Lin Yier
 modified: 20250424053019719
-modifier: 林一二
+modifier: Lin Yier
 tags: [[TidGi Feature Handbook]]
 title: TidGi Feature Handbook/Blogging With Github
 
@@ -9,6 +9,6 @@ For the workspace created by TidGi, to deploy it as a single-page version blog o
 
 Change "Deploy From Branch" to "Deploy from action", and no other settings are required. 
 
-[img[通过Github开设博客-Github部署设置截屏.png]]
+[img[PaseGithubIniciar un blog-GithubCaptura de pantalla de configuracion de implementacion.png]]
 
 After the settings are done, you may need to push the Git changes again to trigger the GitHub Actions to run and deploy the blog. 

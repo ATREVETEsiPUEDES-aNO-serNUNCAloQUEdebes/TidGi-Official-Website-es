@@ -1,24 +1,24 @@
 created: 20230601075207351
-creator: 林一二
+creator: Lin Yier
 modified: 20240313091807042
-modifier: 林一二
-tags: 下载 DownloadLinks
-title: 下载安装MacOS版本
+modifier: Lin Yier
+tags: Descargar DownloadLinks
+title: Descargar e instalarMacOSVersion
 type: text/vnd.tiddlywiki
 
 @@.installer-download-links-container
-[ext[适用于 Intel (x64) 芯片.zip|./files/downloaders/TidGi-darwin-x64-latest.zip]] [ext[适用于新款 M1 / M2 芯片.zip|./files/downloaders/TidGi-darwin-arm64-latest.zip]]
+[ext[Aplicable a Intel (x64) chip.zip|./files/downloaders/TidGi-darwin-x64-latest.zip]] [ext[Adecuado para nuevos modelos. M1 / M2 chip.zip|./files/downloaders/TidGi-darwin-arm64-latest.zip]]
 @@
 
-下载的 zip 解压后，记得拖入「应用程序」文件夹后再使用。
+Descargado zip Despues de descomprimir, recuerda arrastrar hacia adentro「Aplicaciones」Usar despues de la carpeta。
 
 <details>
-<summary>Mac 使用者点击这里展开手动信任应用的操作方法，解决「Mac xxx.app 已损坏，无法打开，你应该将它移到废纸篓」等打不开的问题 ◀</summary>
-我费劲办法也申请不到苹果开发者账号，所以你得手动信任这个应用。「xxx.app 已损坏」是苹果公司在撒谎，苹果利用其垄断地位逼迫开发者支付 99 美元，不然就会向用户撒谎应用已损坏，但其实应用是好的。
+<summary>Mac El usuario hace clic aqui para expandir el metodo de operacion de confiar manualmente en la aplicacion para resolver el problema.「Mac xxx.app Danado y no se puede abrir, debes moverlo a la Papelera」Problema que no se puede abrir mientras se espera. ◀</summary>
+No pude solicitar una cuenta de desarrollador de Apple a pesar de todos mis esfuerzos, por lo que debes confiar manualmente en esta aplicacion.。「xxx.app Danado」Apple miente. Apple utiliza su posicion de monopolio para obligar a los desarrolladores a pagar 99 USD; de lo contrario, se le mentira al usuario diciendole que la aplicacion no funciona cuando en realidad la aplicacion es buena.。
 
-<h2>对于 Intel 芯片用户，首先你得把应用拖入「应用程序」文件夹才能使用！不然会弹一个报错框</h2>
+<h2>Para Intel Usuarios de chip, primero deben arrastrar la aplicacion a「Aplicaciones」¡La carpeta se puede utilizar! De lo contrario, aparecera un cuadro de error.</h2>
 
-点击「取消」 ↓
+Haga clic「Cancelacion」 ↓
 <br/>
 [img[Click-to-cancel.png]]
 <br/>
@@ -26,29 +26,29 @@ type: text/vnd.tiddlywiki
 <br/>
 [img[open-anyway.png]]
 <br/>
-点击「打开」 ↓
+Haga clic「abierto」 ↓
 
 [img[click-to-open.png]]
 
-点击「允许」 ↓
+Haga clic「Permitir」 ↓
 
 [img[click-to-ok.png]]
 
-<h2>对于 M1 M2 用户，需要用另一种类似的方式去允许安装</h2>
+<h2>Para M1 M2 Los usuarios deben utilizar otro metodo similar para permitir la instalacion.</h2>
 
-1. 打开「Terminal.app」（终端应用）输入命令：`sudo spctl --master-disable`
+1. abierto「Terminal.app」（Aplicacion de terminal) Ingrese el comando：`sudo spctl --master-disable`
 
-2. 打开系统的 设置 -> 安全性 -> 允许从以下位置下载的应用程序 任何来源
+2. Abra la configuracion del sistema. -> Seguridad -> Permitir aplicaciones descargadas de cualquier fuente
 
-3. 将安装包移动到“应用程序”
+3. Mueva el paquete de instalacion a "Aplicaciones”
 
-4. 输入命令: `sudo xattr -d com.apple.quarantine /Applications/TidGi.app` ，按苹果的要求输入电脑的密码
+4. Ingrese el comando: `sudo xattr -d com.apple.quarantine /Applications/TidGi.app` ，Ingrese la contrasena de la computadora requerida por Apple.
 
-5. 重新点击 TidGi.app 打开
+5. Haz clic nuevamente TidGi.app abierto
 
 </details>
 
-!!!! Mac 命令行用户
+!!!! Mac Usuarios de la linea de comando
 
 ```bash
 brew install TidGi # Not tested

@@ -1,24 +1,24 @@
 created: 20230911152732657
-creator: 林一二
+creator: Lin Yier
 modified: 20240919080348946
-modifier: 林一二
+modifier: Lin Yier
 tags: TidGi-Mobile zh-Hans TidGiMobileFrontPage
-title: 太记移动端源码和资源
+title: Codigo fuente y recursos moviles de Taiji
 
-!! 太记移动端下载
+!! Descarga movil de Taiji
 
-{{太记移动端直链下载}}
+{{Descarga del enlace directo del terminal movil Taiji}}
 
-!!! QQ群文件可下载
+!!! QQSe pueden descargar archivos grupales.
 
-群号：946052860
+ID de grupo：946052860
 
-!!! 应用商店
+!!! Tienda de aplicaciones
 
-这是太记在一些商店上托管的付费版本。付费版本支持自动更新，其他功能和免费版本完全一致。扣除平台费用后，所得收入将用于支持太记的存续和发展。请将这视作对太记的开发者的一种捐款形式。 
+Esta es la version paga de Taiji alojada en algunas tiendas. La version paga admite actualizaciones automaticas y otras funciones son exactamente las mismas que las de la version gratuita. Despues de deducir las tarifas de la plataforma, los ingresos se utilizaran para apoyar la supervivencia y el desarrollo de Taiji. Considere esto como una forma de donacion a los desarrolladores de Taiji.。 
 
-!! 为项目点星和查看源码
+!! Iniciar el proyecto y ver el codigo fuente.
 
-如果你有 Github 账号，请点⭐️帮我们获得更多关注。
+Si tienes Github Cuenta, haga clic⭐️Ayudanos a conseguir mas atencion。
 
-[[TidGi-Mobile Github 开源仓库|https://github.com/tiddly-gittly/TidGi-Mobile]]
+[[TidGi-Mobile Github Almacen de codigo abierto|https://github.com/tiddly-gittly/TidGi-Mobile]]

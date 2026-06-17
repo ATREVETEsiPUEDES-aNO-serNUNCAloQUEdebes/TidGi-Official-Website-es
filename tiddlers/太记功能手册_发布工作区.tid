@@ -1,23 +1,23 @@
 created: 20241102052019352
-creator: 林一二
+creator: Lin Yier
 modified: 20241102053918607
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/发布工作区
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Publicar espacio de trabajo
 
-公开发布主工作区为博客，并隐藏子工作区里的私有内容。
+Publicar el espacio de trabajo principal como un blog y ocultar el contenido privado en los subespacios de trabajo.。
 
-!! 配置主知识库（公开工作区）
+!! Configurar la base de conocimientos principal (espacio de trabajo publico）
 
-# 打开太记软件，在侧边栏的工作区图标上点右键，选择''工作区设置''。
-# 在弹出的设置窗口中，有很多可配置项
-## 可以设置''工作区编辑者名称''，用于记录条目的创建者信息。（注意这里的设置会覆盖全局设置）
-## 在保存和同步里，可以点击''本地知识库''前面的开关，切换到启用''云端同步知识库''
-## 打开''云端同步知识库''后会显示''Git 身份凭证''，你可以在此填写 GitHub 账号、邮箱、分支名称等信息，将主工作区同步到 GitHub 公开仓库。不过如果在[[太记功能手册/云端备份/配置Github备份]]里已经填写过，这里就不用再填写了
-# 点击''保存''按钮完成配置。
+# Abra el software Taiji, haga clic derecho en el icono del espacio de trabajo en la barra lateral y seleccione''Configuracion del espacio de trabajo''。
+# En la ventana de configuracion emergente, hay muchos elementos configurables.
+## Se puede configurar''Nombre del editor del espacio de trabajo''，Se utiliza para registrar la informacion del creador de la entrada. (Tenga en cuenta que la configuracion aqui anulara la configuracion global）
+## En Guardar y sincronizar, puedes hacer clic''Base de conocimientos locales''Cambie el interruptor frontal a Habilitar''Base de conocimientos sobre sincronizacion en la nube''
+## abierto''Base de conocimientos sobre sincronizacion en la nube''se mostrara mas tarde''Git Credenciales de identidad''，Puedes rellenar aqui GitHub Sincronice la cuenta, el correo electronico, el nombre de la sucursal y otra informacion del espacio de trabajo principal con GitHub Repositorio publico. pero si[[Manual de funciones de Taiji/Copia de seguridad en la nube/ConfiguracionGithubCopia de seguridad]]Ya ha sido completado, por lo que no es necesario volver a completarlo aqui.
+# Haga clic''Guardar''Boton para completar la configuracion。
 
-!! 创建子知识库（私有工作区）
+!! Cree una base de subconocimientos (espacio de trabajo privado）
 
-# 子工作区的设置与主工作区基本相同，都可以配置同步到一个在线的 Github 仓库，但是你可以让它同步到一个私有的 Github 仓库
-## 在 Github 上设置它是私有，或者在创建仓库时就创建为私有仓库。这个是在 Github 上设置的，不是在太记上设置的
-# 这样就没人能看到你同步到这个仓库里的私有笔记了
+# La configuracion del subespacio de trabajo es basicamente la misma que la del espacio de trabajo principal y se puede configurar para que se sincronice con un sistema en linea. Github repositorio, pero puedes sincronizarlo con un privado Github Almacen
+## en Github Configurelo como privado o creelo como un almacen privado al crear el almacen. esto esta en Github Esta ambientado en , no en Taiji.
+# De esta manera nadie podra ver las notas privadas que sincronices con este repositorio.

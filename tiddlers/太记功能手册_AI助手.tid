@@ -1,35 +1,35 @@
 created: 20230718015127147
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册 AI
-title: 太记功能手册/AI助手
+modifier: Lin Yier
+tags: Manual de funciones de Taiji AI
+title: Manual de funciones de Taiji/AIasistente
 type: text/vnd.tiddlywiki
 
-太记支持通过外部 AI 接口（兼容 OpenAI API 格式）接入各类大语言模型，提供智能体对话、向量语义搜索、AI自动备份标题等功能。
+Taiji apoya externamente AI Interfaz (compatible con OpenAI API Format) esta conectado a varios modelos de lenguaje grandes para proporcionar dialogo de agentes y busqueda semantica vectorial.、AICopia de seguridad automatica de titulos y otras funciones.。
 
-<<tree prefix:"太记功能手册/AI助手/">>
+<<tree prefix:"Manual de funciones de Taiji/AIasistente/">>
 
-!! 使用默认智能体
+!! Utilice el agente predeterminado
 
-「智能体」指能基于简单指令完成复杂操作的程序，目前主流的智能体是通过大语言模型的先验知识来基于概率补全用户的简单指令里缺少的信息。
+「Agente」Se refiere a un programa que puede completar operaciones complejas basadas en instrucciones simples. Actualmente, los agentes convencionales utilizan el conocimiento previo de grandes modelos de lenguaje para completar la informacion faltante en instrucciones simples del usuario segun la probabilidad.。
 
-太记里预置了几个简单的智能体作为示例，且默认添加为了常用智能体。常用智能体可以通过
+Taiji ha preestablecido varios agentes simples como ejemplos y se agregan como agentes de uso comun de forma predeterminada. Los agentes comunmente utilizados pueden pasar
 
-* 智能体工作区可以通过点击侧边栏的「智能体」打开。
-* 这个工作区类似有竖排标签页的浏览器。
-** 初次打开智能体工作区时将展示「新标签页」，这里可以在输入框里直接向默认AI智能体提问，按下回车键开始让AI工作
-** 可以在模板区域，选择一个来自内置、插件、云端资源的智能体模板，创建自己的智能体
-** 每个已创建的智能体右上角都有智能体设置按钮，可以调整智能体的默认提示词等
-** 可以选择一个已创建的智能体，让它们来回答输入框里的问题
-* 创建出的对话将展示为类似竖排浏览器标签页的形式，方便查找最近的AI任务
-** 可以固定住常用的标签页，方便查找
-* 最顶部有搜索标签页功能，点击打开后，可以搜索近期浏览、打开的标签页、最近关闭的标签页、其他设备、历史记录
-* 点击任意一个标签页后，会在右侧打开对话界面。
-** 对话界面的顶部从左到右有标题、当前模型选择、智能体设置、提示词预览
-** 标题为AI自动根据内容生成，可修改。后续搜索标签页时可以快速搜索标题。
-** 当前模型选择即切换当前对话的智能体背后将调用的外部AI接口
-** 通过智能体设置可以调整智能体的提示词，修改仅限于当前对话生效
-* 语言模型的核心是提示词管理，我们在应用中可以直接看到各智能体的提示词是怎么拼接的
-** 在新标签页中选中一个智能体后，对话框上下会展示即将拼接进来的提示词
-** 在对话中点击提示词预览后，可以看到即将发送给外部AI接口的完整提示词
+* Se puede acceder al espacio de trabajo del agente haciendo clic en la barra lateral.「Agente」abierto。
+* Este espacio de trabajo es similar a un navegador con pestanas verticales.。
+** Al abrir el espacio de trabajo del agente por primera vez, se mostrara「Nueva pestana」，Aqui puede cambiar directamente el valor predeterminado en el cuadro de entrada.AICuando el agente haga una pregunta, presione la tecla Enter para comenzar.AITrabajo
+** En el area de plantilla, puede seleccionar una plantilla de agente entre recursos integrados, de complemento o de nube para crear su propio agente.
+** Hay un boton de configuracion del agente en la esquina superior derecha de cada agente creado. Puede ajustar las palabras de aviso predeterminadas del agente, etc.
+** Puede seleccionar un agente creado y dejar que responda las preguntas en el cuadro de entrada.
+* La conversacion creada se mostrara como una pestana vertical del navegador, lo que facilitara la busqueda de la conversacion mas cercana.AITarea
+** Puede fijar pestanas de uso frecuente para facilitar la busqueda.
+* Hay una funcion de pestana de busqueda en la parte superior. Despues de hacer clic para abrirlo, puede buscar navegacion reciente, pestanas abiertas, pestanas cerradas recientemente, otros dispositivos e historial.
+* Despues de hacer clic en cualquier pestana, la interfaz de dialogo se abrira a la derecha.。
+** La parte superior de la interfaz de dialogo tiene el titulo, la seleccion del modelo actual, la configuracion del agente y una vista previa de las palabras de izquierda a derecha.
+** TituladoAIGenerado automaticamente en funcion del contenido y puede modificarse. Puede buscar titulos rapidamente cuando busque pestanas mas adelante.。
+** La seleccion del modelo actual es para cambiar el agente externo que sera llamado detras del dialogo actual.AIInterfaz
+** La palabra de aviso del agente se puede ajustar a traves de la configuracion del agente. La modificacion solo es efectiva en la conversacion actual.
+* El nucleo del modelo de lenguaje es la gestion rapida de palabras. En la aplicacion, podemos ver directamente como se unen las palabras clave de cada agente.
+** Despues de seleccionar un agente en la pagina de nueva pestana, las palabras emergentes que se uniran se mostraran en la parte superior e inferior del cuadro de dialogo.
+** Despues de hacer clic en la vista previa de la palabra en la conversacion, puede ver que se enviara al mundo exterior.AILa palabra de aviso completa de la interfaz.

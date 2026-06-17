@@ -1,27 +1,27 @@
 created: 20240211060834001
-creator: 林一二
+creator: Lin Yier
 modified: 20240829131520583
-modifier: 林一二
-tags: 太记移动端功能手册
-title: 太记移动端功能手册/添加想同步的桌面端
+modifier: Lin Yier
+tags: Manual de funciones del terminal movil Taiji
+title: Manual de funciones del terminal movil Taiji/Agrega el escritorio que deseas sincronizar
 
-# 在打开的工作区设置里，点击「服务器列表」，然后点击「添加新服务器」
-# （参考「从桌面版同步已有的知识库」找到电脑端的二维码）
-# 使用扫码功能，扫描电脑版上的二维码
+# En la configuracion del espacio de trabajo abierto, haga clic en「Lista de servidores」，Luego haga clic「Agregar nuevo servidor」
+# （Referencia「Sincronice la base de conocimientos existente desde la version de escritorio」Encuentra el codigo QR en la computadora.）
+# Utilice la funcion de escaneo de codigos para escanear el codigo QR en la version para computadora
 
 <div class="screenshot-container">
-  <div class="screenshot-item">长按列表里的项目，可以打开工作区设置界面 [img[Screenshot-Edit-Wiki.jpg]]</div>
-  <div class="screenshot-item">编辑已知的服务器 [img[Screenshot-Edit-Server.jpg]]</div>
-  <div class="screenshot-item">编辑工作区可以同步到的服务器 [img[Screenshot-Edit-Wiki-Server.jpg]]</div>
+  <div class="screenshot-item">Mantenga presionado un elemento de la lista para abrir la interfaz de configuracion del espacio de trabajo. [img[Screenshot-Edit-Wiki.jpg]]</div>
+  <div class="screenshot-item">Editar servidores conocidos [img[Screenshot-Edit-Server.jpg]]</div>
+  <div class="screenshot-item">Edite los servidores con los que se puede sincronizar el espacio de trabajo. [img[Screenshot-Edit-Wiki-Server.jpg]]</div>
   <div class="screenshot-item">
-    点击添加已知的服务器到工作区，成为可以同步到的服务器 [img[Screenshot-Import-Existing-Server.jpg]]
+    Haga clic para agregar un servidor conocido al espacio de trabajo y convertirlo en un servidor con el que se pueda sincronizar. [img[Screenshot-Import-Existing-Server.jpg]]
   </div>
 </div>
 
-!!! 连不上
+!!! No puedo conectarme
 
-扫码会获得一个链接。
+Escanea el codigo QR y obtendras un enlace.。
 
-如果手机上都打不开这个链接，那说明网不通，例如不在同一个 Wifi 下。
+Si no se puede abrir el enlace en el telefono movil, significa que la red no esta conectada, por ejemplo, no estan en la misma Wifi abajo。
 
-如果电脑上都打不开这个链接，说明桌面端没配置好或者没重启过
+Si el enlace no se puede abrir en la computadora, significa que el escritorio no esta configurado correctamente o no se ha reiniciado.

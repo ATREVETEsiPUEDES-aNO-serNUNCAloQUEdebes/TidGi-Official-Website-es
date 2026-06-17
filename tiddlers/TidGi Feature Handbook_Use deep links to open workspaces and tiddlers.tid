@@ -1,7 +1,7 @@
 created: 20250202040824437
-creator: 林一二
+creator: Lin Yier
 modified: 20250202040918666
-modifier: 林一二
+modifier: Lin Yier
 tags: [[TidGi Feature Handbook]]
 title: TidGi Feature Handbook/Use deep links to open workspaces and tiddlers
 
@@ -11,7 +11,7 @@ For example
 
 * `tidgi://lxqsftvfppu_z4zbaadc0/#:Index` (using the workspace ID)
 * `tidgi://wiki/#New Tiddler` (using the English workspace name. When the names are the same, the sidebar will be used for top-to-bottom sorting)
-* `tidgi://w/中文/#New Tiddler` (using the Chinese workspace name. The `/w/` prefix is required)
+* `tidgi://w/chino/#New Tiddler` (using the Chinese workspace name. The `/w/` prefix is required)
 
 Usage methods
 

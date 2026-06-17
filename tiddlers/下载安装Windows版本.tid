@@ -1,17 +1,17 @@
 created: 20230601075724197
-creator: 林一二
+creator: Lin Yier
 modified: 20240228110250065
-modifier: 林一二
-tags: 下载 DownloadLinks
-title: 下载安装Windows版本
+modifier: Lin Yier
+tags: Descargar DownloadLinks
+title: Descargar e instalarWindowsVersion
 type: text/vnd.tiddlywiki
 
 @@.installer-download-links-container
-[ext[64位自动安装.exe|./files/downloaders/Install-TidGi-Windows-x64.exe]] （推荐，方便更新）
+[ext[64Instalacion automatica de bits.exe|./files/downloaders/Install-TidGi-Windows-x64.exe]] （Recomendado para una facil actualizacion）
 
-[ext[64位Arm架构自动安装.exe|./files/downloaders/Install-TidGi-Windows-arm64.exe]]
+[ext[64PocoArmInstalacion automatica de arquitectura..exe|./files/downloaders/Install-TidGi-Windows-arm64.exe]]
 
-!!! 其他安装器
+!!! Otros instaladores
 
-[ext[64位MSIX应用包|./files/downloaders/TidGi-win32-x64-latest.msix]] [ext[64位Arm架构MSIX应用包|./files/downloaders/TidGi-win32-arm64-latest.msix]]
+[ext[64PocoMSIXPaquete de solicitud|./files/downloaders/TidGi-win32-x64-latest.msix]] [ext[64PocoArmArquitecturaMSIXPaquete de solicitud|./files/downloaders/TidGi-win32-arm64-latest.msix]]
 @@

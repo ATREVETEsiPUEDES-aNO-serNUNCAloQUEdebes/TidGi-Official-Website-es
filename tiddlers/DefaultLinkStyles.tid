@@ -1,7 +1,7 @@
 created: 20230601140518788
-creator: 林一二
+creator: Lin Yier
 modified: 20231126073904647
-modifier: 林一二
+modifier: Lin Yier
 tags: tiddlywiki $:/tags/Stylesheet
 title: DefaultLinkStyles
 type: text/vnd.tiddlywiki
@@ -21,7 +21,7 @@ a.tc-tiddlylink, a.tc-tiddlylink:hover {
   color: <<colour foreground>>;
   border-bottom: <<colour tiddler-link-underline>>;
 	text-decoration: underline;
-  /** hover动画 */
+  /** hoverAnimacion */
   transition: background 120ms ease-in 0s;
 }
 
@@ -51,7 +51,7 @@ a.tc-tiddlylink-external:hover {
 }
 
 
-/** 预览状态标签下拉列表里的链接 */
+/** Vista previa de enlaces en la lista desplegable de etiquetas de estado */
 .tc-drop-down a.tc-tiddlylink:hover {
   background-color: <<colour page-background>>;
   color: <<colour foreground>>;

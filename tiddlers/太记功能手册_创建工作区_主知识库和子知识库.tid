@@ -1,41 +1,41 @@
 created: 20241102045059023
-creator: 林一二
+creator: Lin Yier
 modified: 20250424054137708
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/创建工作区/主知识库和子知识库
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Crea un espacio de trabajo/Base de conocimientos principal y base de conocimientos secundarios
 type: 
 
-在太记中创建公开和私有工作区（知识库）的简要教程：
+Un breve tutorial sobre la creacion de espacios de trabajo (bases de conocimiento) publicos y privados en Taiji.：
 
-! 创建主知识库（作为公开知识库）
+! Crear una base de conocimientos maestra (como base de conocimientos publicos）
 
-# 点击太记侧边栏上的加号 + 按钮，打开新建工作区弹框
-# 默认会选中''创建新WIKI''标签页。
-# 在''文件夹的父文件夹''中，选择您希望存储知识库的路径。默认为桌面，意思是我们将创建一个文件夹用来放你的笔记，这个新的文件夹将放在桌面上。
-# 设置知识库文件夹名称，如 Wiki。
-# 确保''主知识库''选项已开启，此选项保证你的文件夹能被太记打开，而且会为你创建太微的配置文件，之后在有需要时可用于公开发布。
-# 点击''创建WIKI''按钮，即可在指定路径创建一个主知识库。
+# Haz clic en el signo mas en la barra lateral de Taiji. + boton para abrir el cuadro emergente del nuevo espacio de trabajo
+# Seleccionado por defecto''Crear nuevoWIKI''Pestanas。
+# en''Carpeta principal de una carpeta.''En , seleccione la ruta donde desea almacenar la base de conocimientos. El valor predeterminado es el escritorio, lo que significa que crearemos una carpeta para colocar sus notas y esta nueva carpeta se colocara en el escritorio.。
+# Establezca el nombre de la carpeta de la base de conocimientos, como Wiki。
+# asegurar''Base de conocimientos principal''La opcion esta activada. Esta opcion garantiza que Taiji pueda abrir su carpeta y que se creara un archivo de configuracion de Taiwei para usted, que podra utilizar para su publicacion publica cuando sea necesario.。
+# Haga clic''CrearWIKI''boton para crear una base de conocimientos principal en la ruta especificada。
 
-! 创建子知识库（私有知识库）
+! Crear una base de conocimientos secundarios (base de conocimientos privada）
 
-# 在创建新的知识库时，开启''子知识库''选项。子知识库必须依附于一个主知识库，可用于存放私人内容。
-# 设置知识库文件夹名称和保存路径。
-# 指定主知识库的位置，这是一个下拉列表，需要创建过主知识库才有可选的项目。选择一个要依附的主知识库。
-# 创建后，系统会自动为子知识库创建一个指向主知识库的软链接（快捷方式），以便主知识库能够引用子知识库中的内容。两个知识库中的笔记将同时在主知识库里可见，可以互相引用。
-# 填写标签，例如''私有''，每次创建带有特定标签（例如''私有''）的条目时，系统会根据规则自动将内容保存到相应的子工作区目录。
-# 点击''创建WIKI''按钮，子知识库将链接到主知识库，同时创建在指定位置。
+# Al crear una nueva base de conocimientos, active''Base de subconocimientos''Opciones. Los subrepositorios deben estar adjuntos a un repositorio principal y pueden usarse para almacenar contenido privado.。
+# Establezca el nombre de la carpeta de la base de conocimientos y guarde la ruta.。
+# Especifique la ubicacion de la base de conocimientos principal. Esta es una lista desplegable. Es necesario crear la base de conocimientos principal antes de que haya elementos seleccionables. Elija una base de conocimientos maestra a la que adjuntar。
+# Despues de la creacion, el sistema creara automaticamente un enlace suave (acceso directo) a la base de conocimientos principal para la base de conocimientos secundarios, de modo que la base de conocimientos principal pueda hacer referencia al contenido de la base de conocimientos secundarios. Las notas en ambas bases de conocimiento seran visibles en la base de conocimiento principal al mismo tiempo y se podran hacer referencias entre si.。
+# Complete las etiquetas, p.''Privado''，Cada vez que creas una etiqueta con una etiqueta especifica (p. ej.''Privado''）Al ingresar una entrada, el sistema guardara automaticamente el contenido en el directorio del subespacio de trabajo correspondiente de acuerdo con las reglas.。
+# Haga clic''CrearWIKI''boton, la base de conocimientos secundarios se vinculara a la base de conocimientos principal y se creara en la ubicacion especificada.。
 
-通过以上步骤，您可以轻松地在太记中创建公开和私有的工作区，实现不同内容的独立管理和共享。
+A traves de los pasos anteriores, puede crear facilmente espacios de trabajo publicos y privados en Taiji para lograr una gestion independiente y compartir diferentes contenidos.。
 
-!! 子知识库的原理
+!! Principio de base de subconocimientos
 
-太微底层通过自动创建 [ext[`$:/config/FileSystemPaths` 条目|https://bramchen.github.io/tw5-docs/zh-Hans/#Customising%20Tiddler%20File%20Naming]]来定义特定标签的内容存储路径。
+La capa inferior de Taiwei se crea automaticamente. [ext[`$:/config/FileSystemPaths` Entradas|https://bramchen.github.io/tw5-docs/zh-Hans/#Customising%20Tiddler%20File%20Naming]]Para definir la ruta de almacenamiento de contenido de una etiqueta especifica。
 
-您可以在主知识库里找到这个文件，内容大致为
+Puede encontrar este archivo en la base de conocimientos principal y el contenido es aproximadamente
 
 ```tid
-[in-tagtree-of[私有]]:and[search-replace:g[/],[_]search-replace:g[:],[_]addprefix[/]addprefix[private-wiki]addprefix[/]addprefix[subwiki]]
+[in-tagtree-of[Privado]]:and[search-replace:g[/],[_]search-replace:g[:],[_]addprefix[/]addprefix[private-wiki]addprefix[/]addprefix[subwiki]]
 ```
 
-它是自动创建的，所以一般用户无需理解。
+Se crea automaticamente, por lo que el usuario medio no necesita entenderlo.。

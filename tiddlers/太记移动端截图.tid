@@ -1,14 +1,14 @@
 created: 20230911151557175
-creator: 林一二
+creator: Lin Yier
 modified: 20240216074955840
-modifier: 林一二
+modifier: Lin Yier
 tags: TidGiMobileFrontPage TidGi-Mobile zh-Hans
-title: 太记移动端截图
+title: Captura de pantalla del movil Taiji
 
 \whitespace trim
 
 <div class="screenshot-container">
-  <div class="screenshot-item">太记移动端中打开的知识库界面 [img[Screenshot-Wiki-zh.jpg]]</div>
-  <div class="screenshot-item">通过扫二维码从桌面端同步知识库，添加到本地 [img[Screenshot-QR.jpg]]</div>
-  <div class="screenshot-item">在设置里切换语言等 [img[Screenshot-Preference.jpg]]</div>
+  <div class="screenshot-item">La interfaz de la base de conocimientos se abrio en el terminal movil de Taiji. [img[Screenshot-Wiki-zh.jpg]]</div>
+  <div class="screenshot-item">Escanee el codigo QR para sincronizar la base de conocimientos desde el escritorio y agreguelo al local [img[Screenshot-QR.jpg]]</div>
+  <div class="screenshot-item">Cambiar idioma, etc. en la configuracion [img[Screenshot-Preference.jpg]]</div>
 </div>

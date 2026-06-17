@@ -1,53 +1,53 @@
 created: 20231012042622260
-creator: 林一二
+creator: Lin Yier
 modified: 20231017020237704
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/剪藏网页
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Recortar paginas web
 
-您可以使用「太微搜藏」浏览器扩展。
+Puedes usar「Coleccion Taiwei」Extensiones del navegador。
 
 [img[https://addons.mozilla.org/user-media/previews/thumbs/288/288503.jpg?modified=1697159434]]
 
-!! 先决条件
+!! Requisitos previos
 
-在开始之前，请确保您已经 [[开启 HTTP API|太记功能手册/开启 HTTP API]]。
+Antes de comenzar, asegurese de tener [[Enciende HTTP API|Manual de funciones de Taiji/Enciende HTTP API]]。
 
-!! 下载
+!! Descargar
 
-# 火狐： [ext[太微搜藏 - 下载这个插件 🦊 到 Firefox (zh-CN)|https://addons.mozilla.org/zh-CN/firefox/addon/tiddlywiki-collector/]].
-# Chrome/Edge：目前，它不在商店里，从 https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases 下载，下载 [ext[chrome.crx|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases/download/v0.3.0/chrome.crx]] 并拖动到你的 Chrome/Edge 浏览器。
+# Firefox： [ext[Coleccion Taiwei - Descarga este complemento 🦊 llegar Firefox (zh-CN)|https://addons.mozilla.org/zh-CN/firefox/addon/tiddlywiki-collector/]].
+# Chrome/Edge：Actualmente, no esta en tiendas, desde https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases Descargar, descargar [ext[chrome.crx|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases/download/v0.3.0/chrome.crx]] Y arrastra a tu Chrome/Edge Navegador。
 
-!! 使用方法
+!! Como utilizar
 
-!!! 打开「选项」，填写本地知识库网址
+!!! abierto「Opciones」，Complete la URL de la base de conocimientos local.
 
-首次安装时，浏览器会打开此扩展的欢迎页面，其中有一个「选项」按钮可供点击。
+Cuando se instala por primera vez, el navegador abrira la pagina de bienvenida de la extension, que contiene un「Opciones」Se puede hacer clic en los botones。
 
-或者，你可以在谷歌上搜索如何打开浏览器扩展的「选项」。
+Alternativamente, puedes buscar en Google como abrir extensiones del navegador.「Opciones」。
 
-然后填写本地的 [[NodeJS Wiki 知识库网络服务器 API 网址|太记功能手册/开启 HTTP API]]，例如：`localhost:5212`。
+Luego completa el local. [[NodeJS Wiki Servidor web de la base de conocimientos API sitio web|Manual de funciones de Taiji/Enciende HTTP API]]，Por ejemplo：`localhost:5212`。
 
-[img[剪藏网页用法1.png]]
+[img[Uso de paginas web de recorte1.png]]
 
-!!! 剪藏网页到太微里
+!!! Recortar paginas web a Taiwei
 
-转到要剪藏的网站，点击扩展图标打开弹出窗口：
+Vaya al sitio web que desea recortar y haga clic en el icono de extension para abrir la ventana emergente.：
 
-[img[剪藏网页用法2.png]]
+[img[Uso de paginas web de recorte2.png]]
 
-!!! 设置偏好、首选项
+!!! Establecer preferencias y preferencias
 
-!!!! 火狐浏览器
+!!!! Firefox
 
-别忘了允许扩展「访问所有网站」！否则需要点击两次才能剪辑网页内容。
+No olvides permitir extensiones.「Visita todos los sitios web」！De lo contrario, debera hacer clic dos veces para editar el contenido web.。
 
-在火狐浏览器中，它位于 「管理扩展」-「TiddlyWiki Collector」 （或「太微搜藏」） - 「权限」 - 「存取您在所有网站的数据」（勾上！）
+En Firefox, esto se encuentra 「Extensiones de gestion」-「TiddlyWiki Collector」 （o「Coleccion Taiwei」） - 「Permisos」 - 「Acceda a sus datos en todos los sitios web」（Enganchate！）
 
-[img[剪藏网页用法3.png]]
+[img[Uso de paginas web de recorte3.png]]
 
-你也可以点击右上角的「...」，点击「首选项」就能打开设置（首选项）页面。
+Tambien puedes hacer clic en la esquina superior derecha.「...」，Haga clic「Preferencias」Se abrira la pagina de configuracion (preferencias).。
 
-!! 资源
+!! Recursos
 
-源代码： [ext[tiddly-gittly/Browser-Extension-TiddlywikiCollector|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector]] !
+Codigo fuente： [ext[tiddly-gittly/Browser-Extension-TiddlywikiCollector|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector]] !

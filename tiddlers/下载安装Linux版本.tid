@@ -1,19 +1,19 @@
 created: 20230601080626602
-creator: 林一二
+creator: Lin Yier
 modified: 20230601135426906
-modifier: 林一二
-tags: 下载 DownloadLinks
-title: 下载安装Linux版本
+modifier: Lin Yier
+tags: Descargar DownloadLinks
+title: Descargar e instalarLinuxVersion
 type: text/vnd.tiddlywiki
 
 @@.installer-download-links-container
 !!! DEB
 
-[ext[x86芯片64位.deb|./files/downloaders/tidgi_latest_amd64.deb]] [ext[64位Arm芯片.deb|./files/downloaders/tidgi_latest_arm64.deb]]
+[ext[x86chip64Poco.deb|./files/downloaders/tidgi_latest_amd64.deb]] [ext[64PocoArmchip.deb|./files/downloaders/tidgi_latest_arm64.deb]]
 
 !!! RPM
 
-[ext[x86芯片64位.rpm|./files/downloaders/TidGi-latest-1.x86_64.rpm]] [ext[64位Arm芯片.rpm|./files/downloaders/TidGi-latest-1.arm64.rpm]]
+[ext[x86chip64Poco.rpm|./files/downloaders/TidGi-latest-1.x86_64.rpm]] [ext[64PocoArmchip.rpm|./files/downloaders/TidGi-latest-1.arm64.rpm]]
 
 !!! ArchLinux
 

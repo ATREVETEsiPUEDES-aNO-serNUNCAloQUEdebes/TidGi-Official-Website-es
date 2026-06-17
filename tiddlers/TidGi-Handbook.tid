@@ -1,7 +1,7 @@
 created: 20231227083602560
-creator: 林一二
+creator: Lin Yier
 modified: 20231227083824623
-modifier: 林一二
+modifier: Lin Yier
 tags: Topic
 title: TidGi-Handbook
 
@@ -9,7 +9,7 @@ title: TidGi-Handbook
 
 	<$list filter="[<lang>search[zh]]">
 
-		{{太记功能手册}}
+		{{Manual de funciones de Taiji}}
 
 	</$list>
 

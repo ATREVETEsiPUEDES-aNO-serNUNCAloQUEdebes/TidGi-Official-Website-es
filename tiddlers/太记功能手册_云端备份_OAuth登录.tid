@@ -1,30 +1,30 @@
 created: 20260221120000000
-creator: 林一二
+creator: Lin Yier
 modified: 20260221120000000
-modifier: 林一二
-tags: 太记功能手册
-title: 太记功能手册/云端备份/OAuth登录
+modifier: Lin Yier
+tags: Manual de funciones de Taiji
+title: Manual de funciones de Taiji/Copia de seguridad en la nube/OAuthIniciar sesion
 type: text/vnd.tiddlywiki
 
-太记支持通过 OAuth 方式登录，无需手动填写 Personal Access Token。
+Taiji apoya los pases OAuth Inicie sesion, no es necesario completarlo manualmente Personal Access Token。
 
-!! GitHub OAuth 登录
+!! GitHub OAuth Iniciar sesion
 
-# 打开太记设置 → 「同步和备份」→ 「Git 身份凭证」
-# 点击「GitHub」标签页
-# 点击「使用 GitHub 登录」按钮
-# 浏览器会跳转到 GitHub 授权页面，授权后自动返回，Token 自动填入
+# Abra la configuracion de Taiji → 「Sincronizacion y copia de seguridad」→ 「Git Credenciales de identidad」
+# Haga clic「GitHub」Pestanas
+# Haga clic「uso GitHub Iniciar sesion」Boton
+# El navegador saltara a GitHub Pagina de autorizacion, regresa automaticamente despues de la autorizacion，Token Autocompletar
 
-!! 自定义 OAuth 服务器登录（PKCE 流程）
+!! Personalizacion OAuth Inicio de sesion del servidor（PKCE Proceso）
 
-适用于自建 GitLab、Gitea 或其他支持 OAuth 2.0 + PKCE 的服务：
+Apto para la autoconstruccion GitLab、Gitea U otro apoyo OAuth 2.0 + PKCE Servicios：
 
-# 切换到「自定义服务器」标签页
-# 填写「服务器地址」（如 `https://gitlab.example.com`）和「Client ID」
-# 点击登录按钮，浏览器打开授权页面
-# 授权完成后，Token 自动填入表单，并显示「退出登录」按钮
+# Cambiar a「Personaliza el servidor」Pestanas
+# Completar「Direccion del servidor」（Como `https://gitlab.example.com`）y「Client ID」
+# Haga clic en el boton de inicio de sesion y el navegador abrira la pagina de autorizacion.
+# Una vez completada la autorizacion，Token Complete automaticamente el formulario y visualicelo.「Cerrar sesion」Boton
 
-!! 注意
+!! Atencion
 
-* PKCE 流程无需填写 Client Secret，安全性更高
-* 若需手动填写 Token，可忽略此页，直接在表单中粘贴
+* PKCE No es necesario completar el proceso. Client Secret，Mejor seguridad
+* Si necesita completar manualmente Token，Puede ignorar esta pagina y pegarla directamente en el formulario.
